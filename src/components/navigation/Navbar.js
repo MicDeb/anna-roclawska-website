@@ -11,7 +11,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setIsOpen(false);
-  }, [window.location.href]);
+  }, []);
 
   const handleLanguageChange = (event) => {
     i18n.changeLanguage(event.target.value);
