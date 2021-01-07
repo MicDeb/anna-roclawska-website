@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: MicDeb/anna-roclawska-website
-  branch: main
+  branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
