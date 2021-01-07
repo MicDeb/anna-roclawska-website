@@ -1,0 +1,57 @@
+{
+  "as": "as",
+  "at": "at",
+  "navigation": {
+    "home": "Home",
+    "bio": "Bio",
+    "compositions": "Compositions",
+    "chamber_music_activity": "Chamber music",
+    "art_n_voices": "Art’n’Voices",
+    "cds": "CDs",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "symphonic_and_orchestor_music": "Symphonic and orchestral music",
+    "chamber_music": "Chamber music",
+    "solo_music": "Solo music",
+    "choral_music": "Choral music",
+    "choral_music_for_children": "Choral music for children",
+    "arrangements": "Arrangements",
+    "theater_music_and_song": "Theater music and song",
+    "classical_music": "Classical music",
+    "actors_and_artistic_song": "Actor's and artistic song",
+    "tapering": "Tapering"
+  },
+  "home": {
+    "subtitle": "Actor | Vocalist | Vocal coach"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Would you want to talk about something? Just send me your message and I will happily chat"
+  },
+  "calendar": {
+    "no_events": "There are no events for the month"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "days": {
+    "sunday": "Sunday",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday"
+  }
+}
