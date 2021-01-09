@@ -55,6 +55,6 @@ collections:
           label: "Contact"
           name: "contact"
           fields:
-            - { label: "Template Key", name: "templateKey", widget: "hidden", default: "bio-page" }
+            - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Body", name: "body", widget: "markdown" }
