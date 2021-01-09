@@ -62,20 +62,20 @@ collections:
         label: "Symphonic and orchestor music"
         name: "symphonic-and-orchestor-music"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "symphonic-and-orchestor-music" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/compositions/chamber-music.md"
         label: "Chamber music"
         name: "chamber-music"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "chamber-music" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/compositions/solo-music.md"
         label: "Solo music"
         name: "solo-music"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "solo-music" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }

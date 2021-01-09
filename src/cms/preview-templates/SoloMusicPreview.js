@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SoloMusicPageTemplate } from 'src/templates/compositions/solo-music-page';
+import { SoloMusicPageTemplate } from 'src/templates/solo-music';
 
 const SoloMusicPreview = ({ entry, widgetFor }) => (
   <SoloMusicPageTemplate

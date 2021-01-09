@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ChamberMusicPageTemplate } from 'src/templates/compositions/chamber-music-page';
+import { ChamberMusicPageTemplate } from 'src/templates/chamber-music';
 
 const ChamberMusicPreview = ({ entry, widgetFor }) => (
   <ChamberMusicPageTemplate

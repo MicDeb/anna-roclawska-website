@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
-import Content, { HTMLContent } from '../../components/Content';
+import Content, { HTMLContent } from '../components/Content';
 
-export const SoloMusicPageTemplate = ({ title, content, contentComponent }) => {
+export const SymphonicAndOrchestorMusicPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   const { t } = useTranslation();
 
   return (
     <section className='section section--gradient'>
-      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.solo_music') }`} />
+      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.symphonic_and_orchestor_music') }`} />
       <div className='container'>
         <div className='columns'>
           <div className='column is-10 is-offset-1'>
@@ -31,22 +31,22 @@ export const SoloMusicPageTemplate = ({ title, content, contentComponent }) => {
   );
 };
 
-SoloMusicPageTemplate.defaultProps = {
+SymphonicAndOrchestorMusicPageTemplate.defaultProps = {
   content: '',
   contentComponent: () => null,
 };
 
-SoloMusicPageTemplate.propTypes = {
+SymphonicAndOrchestorMusicPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
 
-const SoloMusicPage = ({ data }) => {
+const SymphonicAndOrchestorMusicPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <SoloMusicPageTemplate
+    <SymphonicAndOrchestorMusicPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
@@ -54,14 +54,14 @@ const SoloMusicPage = ({ data }) => {
   );
 };
 
-SoloMusicPage.propTypes = {
+SymphonicAndOrchestorMusicPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default SoloMusicPage;
+export default SymphonicAndOrchestorMusicPage;
 
-export const chamberMusicPageQuery = graphql`
-  query ChamberMusicPage($id: String!) {
+export const symphonicAndOrchestorMusicPageQuery = graphql`
+  query SymphonicAndOrchestorMusicPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

@@ -1,7 +1,7 @@
 ---
 templateKey: solo-music
 path: /compositions/solo-music
-title: Chamber music
+title: Solo music
 ---
 
 MUZYKA SOLOWA
