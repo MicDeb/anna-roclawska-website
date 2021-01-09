@@ -10,6 +10,8 @@ import ChamberMusicPreview from './preview-templates/ChamberMusicPreview';
 import SoloMusicPreview from './preview-templates/SoloMusicPreview';
 import ChoralMusicPreview from './preview-templates/ChoralMusicPreview';
 import ChoralMusicForChildrenPreview from './preview-templates/ChoralMusicForChildrenPreview';
+import ArrangementsPagePreview from './preview-templates/ArrangementsPagePreview';
+import TheaterMusicAndSongsPagePreview from './preview-templates/TheaterMusicAndSongsPagePreview';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -22,3 +24,5 @@ CMS.registerPreviewTemplate('chamber-music', ChamberMusicPreview);
 CMS.registerPreviewTemplate('solo-music', SoloMusicPreview);
 CMS.registerPreviewTemplate('choral-music', ChoralMusicPreview);
 CMS.registerPreviewTemplate('choral-music-for-children', ChoralMusicForChildrenPreview);
+CMS.registerPreviewTemplate('arrangements', ArrangementsPagePreview);
+CMS.registerPreviewTemplate('theater-music-and-song', TheaterMusicAndSongsPagePreview);

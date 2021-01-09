@@ -11,7 +11,7 @@ export const ChoralMusicPageTemplate = ({ title, content, contentComponent }) =>
 
   return (
     <section className='section section--gradient'>
-      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.solo_music') }`} />
+      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.choral_music') }`} />
       <div className='container'>
         <div className='columns'>
           <div className='column is-10 is-offset-1'>

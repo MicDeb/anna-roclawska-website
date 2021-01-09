@@ -5,13 +5,13 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import Content, { HTMLContent } from '../components/Content';
 
-export const BioPageTemplate = ({ title, content, contentComponent }) => {
+export const TheaterMusicAndSongsTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   const { t } = useTranslation();
 
   return (
     <section className='section section--gradient'>
-      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('bio') }`} />
+      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.arrangements') }`} />
       <div className='container'>
         <div className='columns'>
           <div className='column is-10 is-offset-1'>
@@ -31,22 +31,22 @@ export const BioPageTemplate = ({ title, content, contentComponent }) => {
   );
 };
 
-BioPageTemplate.defaultProps = {
+TheaterMusicAndSongsTemplate.defaultProps = {
   content: '',
   contentComponent: () => null,
 };
 
-BioPageTemplate.propTypes = {
+TheaterMusicAndSongsTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
 
-const BioPage = ({ data }) => {
+const TheaterMusicAndSongs = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <BioPageTemplate
+    <TheaterMusicAndSongsTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
@@ -54,14 +54,14 @@ const BioPage = ({ data }) => {
   );
 };
 
-BioPage.propTypes = {
+TheaterMusicAndSongs.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default BioPage;
+export default TheaterMusicAndSongs;
 
-export const bioPageQuery = graphql`
-  query BioPage($id: String!) {
+export const theaterMusicAndSongsPageQuery = graphql`
+  query TheaterMusicAndSongs($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
