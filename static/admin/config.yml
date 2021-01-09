@@ -58,3 +58,10 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/compositions/symphonic-and-orchestor-music.md"
+        label: "Symphonic and orchestor music"
+        name: "symphonic-and-orchestor-music"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "symphonic-and-orchestor-music" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

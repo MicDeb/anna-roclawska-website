@@ -5,13 +5,13 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import Content, { HTMLContent } from '../components/Content';
 
-export const ContactPageTemplate = ({ title, content, contentComponent }) => {
+export const SymphonicAndOrchestorMusicPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   const { t } = useTranslation();
 
   return (
     <section className='section section--gradient'>
-      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.contact') }`} />
+      <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.symphonic_and_orchestor_music') }`} />
       <div className='container'>
         <div className='columns'>
           <div className='column is-10 is-offset-1'>
@@ -31,22 +31,22 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
   );
 };
 
-ContactPageTemplate.defaultProps = {
+SymphonicAndOrchestorMusicPageTemplate.defaultProps = {
   content: '',
   contentComponent: () => null,
 };
 
-ContactPageTemplate.propTypes = {
+SymphonicAndOrchestorMusicPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
 
-const ContactPage = ({ data }) => {
+const SymphonicAndOrchestorMusicPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <ContactPageTemplate
+    <SymphonicAndOrchestorMusicPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
@@ -54,14 +54,14 @@ const ContactPage = ({ data }) => {
   );
 };
 
-ContactPage.propTypes = {
+SymphonicAndOrchestorMusicPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default ContactPage;
+export default SymphonicAndOrchestorMusicPage;
 
-export const contactPageQuery = graphql`
-  query ContactPage($id: String!) {
+export const symphonicAndOrchestorMusicPageQuery = graphql`
+  query SymphonicAndOrchestorMusicPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
