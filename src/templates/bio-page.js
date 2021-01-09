@@ -43,6 +43,8 @@ AboutPageTemplate.propTypes = {
 };
 
 const BioPage = ({ data }) => {
+  // eslint-disable-next-line no-console
+  console.log('data', data);
   const { markdownRemark: post } = data;
 
   return (
