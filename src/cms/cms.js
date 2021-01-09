@@ -9,6 +9,7 @@ import SymphonicAndOrchestorMusicPreview from './preview-templates/SymphonicAndO
 import ChamberMusicPreview from './preview-templates/ChamberMusicPreview';
 import SoloMusicPreview from './preview-templates/SoloMusicPreview';
 import ChoralMusicPreview from './preview-templates/ChoralMusicPreview';
+import ChoralMusicForChildrenPreview from './preview-templates/ChoralMusicForChildrenPreview';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -20,3 +21,4 @@ CMS.registerPreviewTemplate('symphonic-and-orchestor-music', SymphonicAndOrchest
 CMS.registerPreviewTemplate('chamber-music', ChamberMusicPreview);
 CMS.registerPreviewTemplate('solo-music', SoloMusicPreview);
 CMS.registerPreviewTemplate('choral-music', ChoralMusicPreview);
+CMS.registerPreviewTemplate('choral-music-for-children', ChoralMusicForChildrenPreview);
