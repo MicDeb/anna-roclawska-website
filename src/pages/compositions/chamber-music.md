@@ -1,6 +1,6 @@
 ---
 templateKey: chamber-music
-path: /compositions/chamber_music
+path: /compositions/chamber-music
 title: Chamber music
 ---
 
@@ -17,6 +17,3 @@ Anna Rocławska-Musiałczyk – „…and calm…” na kwintet klarnetowo-basse
 live Festiwal Gran Canaria Clarinet 2018
 
 https://www.youtube.com/watch?v=c884-hUT4Io
-
-
-

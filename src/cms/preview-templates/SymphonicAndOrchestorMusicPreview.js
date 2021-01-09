@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SymphonicAndOrchestorMusicPage } from 'src/templates/symphonic-and-orchestor-music-page';
+import { SymphonicAndOrchestorMusicPage } from 'src/templates/compositions/symphonic-and-orchestor-music-page';
 
 const SymphonicAndOrchestorMusicPreview = ({ entry, widgetFor }) => (
   <SymphonicAndOrchestorMusicPage

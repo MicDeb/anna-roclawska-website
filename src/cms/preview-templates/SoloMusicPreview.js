@@ -1,24 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ChamberMusicPageTemplate } from 'src/templates/compositions/chamber-music-page';
+import { SoloMusicPageTemplate } from 'src/templates/compositions/solo-music-page';
 
-const ChamberMusicPreview = ({ entry, widgetFor }) => (
-  <ChamberMusicPageTemplate
+const SoloMusicPreview = ({ entry, widgetFor }) => (
+  <SoloMusicPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />
 );
 
-ChamberMusicPreview.defaultProps = {
+SoloMusicPreview.defaultProps = {
   entry: null,
   widgetFor: () => null,
 };
 
-ChamberMusicPreview.propTypes = {
+SoloMusicPreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 };
 
-export default ChamberMusicPreview;
+export default SoloMusicPreview;

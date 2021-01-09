@@ -14,4 +14,3 @@ Bałtycka Filharmonia Młodych pod dyr. Sylwii Janiak-Kobylińskiej
 Nagranie live Polish Rising Music Stars 2020
 
 https://www.youtube.com/watch?v=DvLqaWachE8&feature=youtu.be
-

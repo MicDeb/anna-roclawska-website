@@ -7,6 +7,7 @@ import BlogPostPreview from './preview-templates/BlogPostPreview';
 import ContactPagePreview from './preview-templates/ContactPagePreview';
 import SymphonicAndOrchestorMusicPreview from './preview-templates/SymphonicAndOrchestorMusicPreview';
 import ChamberMusicPreview from './preview-templates/ChamberMusicPreview';
+import SoloMusicPreview from './preview-templates/SoloMusicPreview';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -16,3 +17,4 @@ CMS.registerPreviewTemplate('blog', BlogPostPreview);
 CMS.registerPreviewTemplate('contact', ContactPagePreview);
 CMS.registerPreviewTemplate('symphonic-and-orchestor-music', SymphonicAndOrchestorMusicPreview);
 CMS.registerPreviewTemplate('chamber-music', ChamberMusicPreview);
+CMS.registerPreviewTemplate('solo-music', SoloMusicPreview);
