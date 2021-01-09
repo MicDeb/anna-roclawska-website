@@ -2,7 +2,7 @@ import CMS from 'netlify-cms-app';
 import uploadcare from 'netlify-cms-media-library-uploadcare';
 import cloudinary from 'netlify-cms-media-library-cloudinary';
 
-import AboutPagePreview from './preview-templates/AboutPagePreview';
+import BioPagePreview from './preview-templates/BioPagePreview';
 import BlogPostPreview from './preview-templates/BlogPostPreview';
 import ContactPagePreview from './preview-templates/ContactPagePreview';
 import SymphonicAndOrchestorMusicPreview from './preview-templates/SymphonicAndOrchestorMusicPreview';
@@ -10,7 +10,7 @@ import SymphonicAndOrchestorMusicPreview from './preview-templates/SymphonicAndO
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
-CMS.registerPreviewTemplate('about', AboutPagePreview);
+CMS.registerPreviewTemplate('bio', BioPagePreview);
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
 CMS.registerPreviewTemplate('contact', ContactPagePreview);
-CMS.registerPreviewTemplate('Symphonic and orchestor music', SymphonicAndOrchestorMusicPreview);
+CMS.registerPreviewTemplate('symphonic-and-orchestor-music', SymphonicAndOrchestorMusicPreview);

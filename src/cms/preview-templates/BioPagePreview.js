@@ -1,24 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AboutPageTemplate } from '../../templates/bio-page';
+import { AboutPageTemplate } from 'src/templates/bio-page';
 
-const AboutPagePreview = ({ entry, widgetFor }) => (
+const BioPagePreview = ({ entry, widgetFor }) => (
   <AboutPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />
 );
 
-AboutPagePreview.defaultProps = {
+BioPagePreview.defaultProps = {
   entry: null,
   widgetFor: () => null,
 };
 
-AboutPagePreview.propTypes = {
+BioPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 };
 
-export default AboutPagePreview;
+export default BioPagePreview;
