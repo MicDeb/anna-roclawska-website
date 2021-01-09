@@ -6,6 +6,7 @@ import BioPagePreview from './preview-templates/BioPagePreview';
 import BlogPostPreview from './preview-templates/BlogPostPreview';
 import ContactPagePreview from './preview-templates/ContactPagePreview';
 import SymphonicAndOrchestorMusicPreview from './preview-templates/SymphonicAndOrchestorMusicPreview';
+import ChamberMusicPreview from './preview-templates/ChamberMusicPreview';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -14,3 +15,4 @@ CMS.registerPreviewTemplate('bio', BioPagePreview);
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
 CMS.registerPreviewTemplate('contact', ContactPagePreview);
 CMS.registerPreviewTemplate('symphonic-and-orchestor-music', SymphonicAndOrchestorMusicPreview);
+CMS.registerPreviewTemplate('chamber-music', ChamberMusicPreview);

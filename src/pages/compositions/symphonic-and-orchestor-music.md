@@ -1,6 +1,6 @@
 ---
 templateKey: symphonic-and-orchestor-music-page
-path: /symphonic-and-orchestor-music
+path: /compositions/symphonic-and-orchestor-music
 title: Symphonic and orchestor music
 ---
 
