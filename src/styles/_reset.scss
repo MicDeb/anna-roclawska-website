@@ -77,3 +77,11 @@ button {
     border: none;
   }
 }
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(293deg) brightness(108%) contrast(110%);
+}
+
+.icon {
+  width: 1.2rem;
+}

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import map from 'lodash/map';
+import arrowIcon from 'src/img/arrow.svg';
 import { navigationItems } from './navigationItems';
 
 export default function Menu({
@@ -11,6 +12,10 @@ export default function Menu({
   isOpen,
 }) {
   const { t } = useTranslation();
+  const [isChildMenuOpen, setChildMenuOpen] = useState({
+    compositions: false,
+    chamber_music_activity: false,
+  });
 
   return (
     <div className={`navbar__menu ${ isOpen ? 'navbar__menu--open' : '' }`}>
@@ -26,13 +31,27 @@ export default function Menu({
               </Link>
             )
               : (
-                <p className='navbar__menu--links-item--link'>
+                // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
+                <p
+                  className='navbar__menu--links-item--link navbar__menu--links-item--link--expanded'
+                  onClick={() => setChildMenuOpen(
+                    (prevState) => ({
+                      ...prevState,
+                      [item.name]: !prevState[item.name],
+                    }),
+                  )}
+                >
                   {t(`navigation.${ item.name }`)}
+                  <img
+                    src={arrowIcon}
+                    alt='Arrow icon'
+                    className={`icon filter-white ${ isChildMenuOpen[item.name] ? 'icon--active' : '' }`}
+                  />
                 </p>
               )}
 
             {item.children && (
-              <ul className='menu-item-children'>
+              <ul className={`menu-item-children ${ isChildMenuOpen[item.name] ? 'menu-item-children--active' : '' }`}>
                 {map(item.children, (navChildren) => (
                   <li className='menu-item-children--item'>
                     <Link

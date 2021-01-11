@@ -23,23 +23,25 @@ export default function Navbar() {
   };
 
   return (
-    <div className='navigation'>
-      <nav
-        className='navbar'
-        role='navigation'
-        aria-label='main-navigation'
-      >
-        <Logo />
-        <Hamburger
-          isOpen={isOpen}
-          setOpen={toggleHamburger}
-        />
-        <Menu
-          language={language}
-          handleLanguageChange={handleLanguageChange}
-          isOpen={isOpen}
-        />
-      </nav>
-    </div>
+    <>
+      <div className='navigation'>
+        <nav
+          className='navbar'
+          role='navigation'
+          aria-label='main-navigation'
+        >
+          <Logo />
+          <Hamburger
+            isOpen={isOpen}
+            setOpen={toggleHamburger}
+          />
+        </nav>
+      </div>
+      <Menu
+        language={language}
+        handleLanguageChange={handleLanguageChange}
+        isOpen={isOpen}
+      />
+    </>
   );
 }
