@@ -81,8 +81,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background: $light-grey;
-      height: 100vh;
+      background: $black;
+      min-height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -102,22 +102,41 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        margin-left: $gap-lg;
+        margin: $gap-md;
 
-        &--item {
+        &-item {
+          margin: $gap-sm 0;
           width: 100%;
-          @include border-bottom();
-          font-size: $font-size;
-          color: $font-color;
-          text-transform: uppercase;
-          padding: 1rem 0;
-          font-weight: $font-weight-bold;
-          letter-spacing: 0.5rem;
-          text-decoration: none;
-          transition: color 0.3s linear;
 
-          &:hover {
-            color: #343078;
+          &--link {
+            width: 100%;
+            font-size: $font-size;
+            color: $font-color;
+            text-transform: uppercase;
+            font-weight: $font-weight-thin;
+            letter-spacing: 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s linear;
+
+            &:hover {
+              color: #343078;
+            }
+          }
+
+          .menu-item-children {
+            margin-left: $gap-sm;
+
+            &--item {
+              margin: $gap-sm 0;
+              width: 100%;
+              font-size: $font-size;
+              color: $font-color;
+              text-transform: uppercase;
+              font-weight: $font-weight-thin;
+              letter-spacing: 0.5rem;
+              text-decoration: none;
+              transition: color 0.3s linear;
+            }
           }
         }
       }

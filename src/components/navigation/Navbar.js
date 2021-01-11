@@ -6,11 +6,11 @@ import Hamburger from './Hamburger';
 
 export default function Navbar() {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(true);
   const [language, setLanguage] = useState('pl');
 
   useEffect(() => {
-    setIsOpen(false);
+    setIsOpen(true);
   }, []);
 
   const handleLanguageChange = (event) => {

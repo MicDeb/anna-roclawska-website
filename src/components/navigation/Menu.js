@@ -16,22 +16,27 @@ export default function Menu({
     <div className={`navbar__menu ${ isOpen ? 'navbar__menu--open' : '' }`}>
       <ul className='navbar__menu--links'>
         {map(navigationItems, (item) => (
-          <li>
-            <Link
-              className='navbar__menu--links--item'
-              to={item.location}
-            >
-              {t(`navigation.${ item.name }`)}
-            </Link>
+          <li className='navbar__menu--links-item'>
+            {item.location ? (
+              <Link
+                className='navbar__menu--links-item--link'
+                to={item.location}
+              >
+                {t(`navigation.${ item.name }`)}
+              </Link>
+            )
+              : (
+                <p className='navbar__menu--links-item--link'>
+                  {t(`navigation.${ item.name }`)}
+                </p>
+              )}
 
             {item.children && (
-              <ul style={{ marginLeft: '20px' }}>
+              <ul className='menu-item-children'>
                 {map(item.children, (navChildren) => (
-                  <li>
-                    {/* eslint-disable-next-line no-console */}
-                    {console.log('item.children', navChildren)}
+                  <li className='menu-item-children--item'>
                     <Link
-                      className='navbar__menu--links--item'
+                      className='menu-item-children--item--link'
                       to={navChildren.location}
                     >
                       {t(`navigation.${ navChildren.name }`)}

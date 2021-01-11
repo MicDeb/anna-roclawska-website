@@ -5,7 +5,7 @@ export const navigationItems = Object.freeze([
   { location: '/', name: 'home' },
   { location: '/bio', name: 'bio' },
   {
-    location: '/compositions',
+    location: null,
     name: 'compositions',
     children: [
       {
@@ -39,7 +39,7 @@ export const navigationItems = Object.freeze([
     ],
   },
   {
-    location: '/chamber-music',
+    location: null,
     name: 'chamber_music_activity',
     children: [
       {
