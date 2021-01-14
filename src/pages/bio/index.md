@@ -5,6 +5,8 @@ title: BIO
 ---
 <h3 class="page__subtitle">Anna Rocławska – Musiałczyk</h3>
 
+![Anna Rocławska-Musiałczyk](/img/anna-roclawska-musialczyk003.jpg "Anna Rocławska-Musiałczyk")
+
 <p class="box bio__box bio__box--main">Kompozytorka, pianistka i dyrygentka. Urodziła się w 1987 roku w Wejherowie. Ukończyła Akademię Muzyczną im. Stanisława Moniuszki w Gdańsku na trzech wydziałach, tym samym uzyskując tytuł magistra z trzech specjalności: Instrumentalistyka – klasa Fortepianu prof. Grażyny Fiedoruk – Sienkiewicz (2012), Edukacja muzyczna w zakresie sztuki muzycznej – klasa Dyrygentury chóralnej prof. dr hab. Aleksandry Gruczy – Rogalskiej (2014 – dyplom z wyróżnieniem) oraz Teoria i Kompozycja – klasa Kompozycji ad. dr Marka Czerniewicza (2018).</p>
 
 <p class="box bio__box">Jest laureatką konkursów kompozytorskich o randze międzynarodowej oraz ogólnopolskiej m. in.: III miejsce na V Międzynarodowym Festiwalu Transatlantyk Instant Composer pod przewodnictwem jury Jana A. P. Kaczmarka (2016), II miejsce na 2. Międzynarodowym Konkursie Kompozytorskim im. Andrzeja Koszewskiego w Poznaniu (2019), Special prize Jury International Composition Competition 'Corinfesta' AERCO/Andreoli w Bolonii (2017), dwukrotne I miejsce na Ogólnopolskim Konkursie Kompozytorskim na Chóralną Pieśń Pasyjną do tekstu w Języku Kaszubskim (2014; 2015), Young Music Award na Międzynarodowym Festiwalu „Mundus Cantat” w Sopocie (2015) oraz II miejsce na Ogólnopolskim Konkursie Kompozytorskim im. Adama Didura w Sanoku (2016).</p>
@@ -22,7 +24,6 @@ Jako młoda kompozytorka Rocławska-Musiałczyk ma w dorobku również nagrania 
 <p class="box bio__box">
 Anna Rocławska-Musiałczyk uczestniczyła w wielu kursach mistrzowskich z zakresu kameralistyki, dyrygentury i kompozycji m. in. z Janem A. P. Kaczmarkiem, Philipem Lawsonem (byłym członkiem zespołu „The King's Singers”), Triem Moskiewskim, prof. Vytautasem Miškinisem, prof. Krzysztofem Meyerem czy prof. Grażyną Pstrokońską-Nawratil.
 </p>
-
 
 <p class="box bio__box">
 Współtworzy i jest zarazem członkinią Zespołu Wokalnego Art’n’Voices, z którym zdobyła szereg nagród na konkursach i festiwalach w Polsce i w Europie (m.in. 10 nagród Grand Prix) oraz dokonała nagrań płyt m. in.: „Droga Krzyżowa. Z Chrystusem na Kalwarii Wejherowskiej” oraz  wspomniana płyta „Midnight Stories” - Contemporary Music of Polish Composers (DUX). Wraz z Art’n’Voices Anna Rocławska-Musiałczyk koncertuje w Polsce i w Europie m.in.: tournée w ramach wysokiej rangi „Festival des Chœurs Lauréats” we Francji, na który zapraszane są najlepsze chóry i zespoły wokalne z całego świata.
