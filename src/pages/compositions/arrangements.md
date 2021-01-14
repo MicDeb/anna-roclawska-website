@@ -4,14 +4,33 @@ path: /compositions/arrangements
 title: Arrangements
 ---
 
-ARANŻACJE
-Krzysztof Komeda/ arr. A. Rocławska-Musiałczyk - Rosemary’s Baby
-Wyk. Zespół Wokalny Art’n’Voices („Midnight Stories”)
-https://www.youtube.com/watch?v=HZ6jEe7eVgo
-„Wśród ciszy” – 11 aranżacji kolęd na sopran solo, chór mieszany, obój, fortepian i orkiestrę smyczkową
-Wyk. Małgorzata Rocławska – sopran, Gdański Chór Uniwersytetu Medycznego (dyr. Błażej Połom), Marcin Łukasik – obój,  Anna Rocławska-Musiałczyk – fortepian oraz Bałtycka Filharmonia Młodych (dyr. Sylwia Janiak-Kobylińska)
+<div class="box works-box">
+    <p class="works__title">Krzysztof Komeda/ arr. A. Rocławska-Musiałczyk - Rosemary’s Baby</p>
+    <ul class="works__performers">
+        <li>Zespół Wokalny Art’n’Voices („Midnight Stories”)</li>
+    </ul>
+    <div class="youtube-movie">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/HZ6jEe7eVgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
-https://www.youtube.com/watch?v=6jByizWItGQ&t=195s
+<div class="box works-box">
+    <p class="works__title">„Wśród ciszy” – 11 aranżacji kolęd na sopran solo, chór mieszany, obój, fortepian i orkiestrę smyczkową</p>
+    <ul class="works__performers">
+        <li>Małgorzata Rocławska – sopran</li>
+        <li>Gdański Chór Uniwersytetu Medycznego (dyr. Błażej Połom)</li>
+        <li>Marcin Łukasik – obój</li>
+        <li>Anna Rocławska-Musiałczyk – fortepian</li>
+        <li>Bałtycka Filharmonia Młodych (dyr. Sylwia Janiak-Kobylińska)</li>
+    </ul>
+    <div class="youtube-movie">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/6jByizWItGQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
-Andrzej Zieliński/ arr. A. Rocławska-Musiałczyk -  „W żółtych płomieniach liści”
-https://www.youtube.com/watch?v=4NvJuZxNm-s&list=RD4NvJuZxNm-s&start_radio=1
+<div class="box works-box">
+    <p class="works__title">Andrzej Zieliński/ arr. A. Rocławska-Musiałczyk -  „W żółtych płomieniach liści”</p>
+    <div class="youtube-movie">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/4NvJuZxNm-s?list=RD4NvJuZxNm-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>

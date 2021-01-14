@@ -1,7 +1,7 @@
 .bio {
-  &__box {
-    &--main {
-      font-size: $font-size-lg;
+  .content {
+    p:first-child {
+      margin: $gap-lg 0;
     }
   }
 }

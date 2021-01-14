@@ -4,13 +4,28 @@ path: /compositions/choral-music-for-children
 title: Choral music for children
 ---
 
-MUZYKA CHÓRALNA DLA NAJMŁODSZYCH
-Anna Rocławska-Musiałczyk – „Wiatr na plaży”
-Wyk. Chór Państwowej Szkoły Muzycznej I st. Im. Fryderyka Chopina w Wejherowie pod dyr. Ewy Rocławskiej
-Nagranie konkursowe live 2015
-https://www.youtube.com/watch?v=oFvUfw0jyNQ&t=3s
-Anna Rocławska-Musiałczyk – „Deszcz”
-Wyk. Chór Żeński I Liceum Ogólnokształcącego im. Józefa Wybickiego w Kościerzynie pod dyr. Tomasza Chyły
-Nagranie live 2017
+<div class="box works-box">
+    <p class="works__title">Anna Rocławska-Musiałczyk – „Wiatr na plaży”</p>
+    <ul class="works__performers">
+        <li>Chór Państwowej Szkoły Muzycznej I st. Im. Fryderyka Chopina w Wejherowie pod dyr. Ewy Rocławskiej</li>
+    </ul>
+    <p class="works__details">
+        Nagranie konkursowe live 2015
+    </p>
+    <div class="youtube-movie">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/oFvUfw0jyNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
-https://www.youtube.com/watch?v=X9qCDCjQnOI
+<div class="box works-box">
+    <p class="works__title">Anna Rocławska-Musiałczyk – „Deszcz”</p>
+    <ul class="works__performers">
+        <li>Chór Żeński I Liceum Ogólnokształcącego im. Józefa Wybickiego w Kościerzynie pod dyr. Tomasza Chyły</li>
+    </ul>
+    <p class="works__details">
+        Nagranie live 2017
+    </p>
+    <div class="youtube-movie">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/X9qCDCjQnOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>

@@ -12,20 +12,14 @@ export const ActorsAndArtisticSongTemplate = ({ title, content, contentComponent
   return (
     <section className='section section--gradient'>
       <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.arrangements') }`} />
-      <div className='container'>
-        <div className='columns'>
-          <div className='column is-10 is-offset-1'>
-            <div className='section'>
-              <h2 className='title is-size-3 has-text-weight-bold is-bold-light'>
-                {title}
-              </h2>
-              <PageContent
-                className='content'
-                content={content}
-              />
-            </div>
-          </div>
-        </div>
+      <div>
+        <h2 className='page__main-title'>
+          {title}
+        </h2>
+        <PageContent
+          className='content'
+          content={content}
+        />
       </div>
     </section>
   );

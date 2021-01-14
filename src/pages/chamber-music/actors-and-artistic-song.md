@@ -4,21 +4,31 @@ path: /chamber-music/actors-and-artistic-song
 title: Actors and artistic song
 ---
 
-PIOSENKA AKTORSKA I ARTYSTYCZNA
+<div class="box works-box">
+    <p class="works__title">J. Derfel/J. Przybora – „List nieortograficzny”</p>
+    <ul class="works__performers">
+        <li>P. Kosewski – śpiew</li>
+        <li>A. Rocławska-Musiałczyk – fortepian</li>
+    </ul>
+    <p class="works__details">
+        Płyta 2019 Jeremiego Przybory i Jerzego Derfla z albumu "Piosenki na depresję"
+    </p>
+    <div class="youtube-movie">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/wXthNUpkn7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
-J. Derfel/J. Przybora – „List nieortograficzny”
-P. Kosewski – śpiew
-A. Rocławska-Musiałczyk – fortepian
 
-Płyta 2019 Jeremiego Przybory i Jerzego Derfla z albumu "Piosenki na depresję"
-https://www.youtube.com/watch?v=wXthNUpkn7w
-
-
-A. Rocławska-Musiałczyk – Lililôj, Malinczi
-Mirela Fiedorowicz – tekst, śpiew
-Katarzyna Słomińska – skrzypce
-Monika Misiąg – wiolonczela  
-Anna Rocławska-Musiałczyk – fortepian
-
-https://www.youtube.com/watch?v=X9LVo7HpnwM
+<div class="box works-box">
+    <p class="works__title">A. Rocławska-Musiałczyk – Lililôj, Malinczi</p>
+    <ul class="works__performers">
+        <li>Mirela Fiedorowicz – tekst, śpiew</li>
+        <li>Katarzyna Słomińska – skrzypce</li>
+        <li>Monika Misiąg – wiolonczela</li>
+        <li>Anna Rocławska-Musiałczyk – fortepian</li>
+    </ul>
+    <div class="youtube-movie">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/X9LVo7HpnwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 

@@ -3,9 +3,9 @@ templateKey: bio-page
 path: /bio
 title: BIO
 ---
-<h3 class="page__subtitle">Anna Rocławska – Musiałczyk</h3>
-
 ![Anna Rocławska-Musiałczyk](/img/anna-roclawska-musialczyk003.jpg "Anna Rocławska-Musiałczyk")
+
+<h3 class="page__subtitle">Anna Rocławska – Musiałczyk</h3>
 
 <p class="box bio__box bio__box--main">Kompozytorka, pianistka i dyrygentka. Urodziła się w 1987 roku w Wejherowie. Ukończyła Akademię Muzyczną im. Stanisława Moniuszki w Gdańsku na trzech wydziałach, tym samym uzyskując tytuł magistra z trzech specjalności: Instrumentalistyka – klasa Fortepianu prof. Grażyny Fiedoruk – Sienkiewicz (2012), Edukacja muzyczna w zakresie sztuki muzycznej – klasa Dyrygentury chóralnej prof. dr hab. Aleksandry Gruczy – Rogalskiej (2014 – dyplom z wyróżnieniem) oraz Teoria i Kompozycja – klasa Kompozycji ad. dr Marka Czerniewicza (2018).</p>
 

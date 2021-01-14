@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
+import trim from 'lodash/trim';
 // import Footer from './Footer';
 import Navbar from './navigation/Navbar';
 import useSiteMetadata from './SiteMetadata';
@@ -68,7 +69,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <main
         id='main-container'
-        className={`${ children.key === '/' ? 'home' : children.key }`}
+        className={`${ children.key === '/' ? 'home' : trim(children.key, '/') }`}
       >
         {children}
       </main>

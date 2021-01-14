@@ -4,6 +4,7 @@
 */
 @import "mixins";
 @import "variables/colors";
+@import "variables/distance";
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -13,7 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font-family: 'Cinzel', sans-serif;
   vertical-align: baseline;
-  line-height: 1;
+  line-height: 1.15;
 
   @include box-sizing(border-box);
 }
@@ -84,4 +85,17 @@ button {
 
 .icon {
   width: 1.2rem;
+}
+
+.youtube-movie {
+  margin: $gap 0;
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.box {
+  margin: $gap 0;
+  line-height: 1.4;
 }

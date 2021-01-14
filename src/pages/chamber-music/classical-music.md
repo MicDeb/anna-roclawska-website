@@ -4,11 +4,15 @@ path: /chamber-music/classical-music
 title: Classical music
 ---
 
-MUZYKA KLASYCZNA
-G. Charpentier – Louise „Depuis le jour”
-Wyk. Małgorzata Rocławska-sopran
-Anna Rocławska-Musiałczyk – fortepian
-
-Nagranie 2020
-https://www.youtube.com/watch?v=d7qJjZZdhMM
+<div class="box works-box">
+    <p class="works__title">G. Charpentier – Louise „Depuis le jour”</p>
+    <ul class="works__performers">
+        <li>Małgorzata Rocławska-sopran</li>
+        <li>Anna Rocławska-Musiałczyk – fortepian</li>
+    </ul>
+    <p class="works__details">Nagranie 2020</p>
+    <div class="youtube-movie">
+        <iframe width="1020" height="538" src="https://www.youtube.com/embed/d7qJjZZdhMM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 

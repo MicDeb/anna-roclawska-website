@@ -1,0 +1,27 @@
+.works {
+  &-box {
+    margin-bottom: $gap-lg;
+
+    &:not(:last-child):after {
+      content: '';
+      width: 70%;
+      height: 1px;
+      background: $light-grey;
+      display: block;
+      margin: auto;
+    }
+  }
+  &__title {
+    font-size: $font-size-lg;
+    margin-bottom: $gap;
+    line-height: 1.3;
+  }
+
+  &__performers {
+    margin-bottom: $gap;
+  }
+
+  &__details {
+    font-size: $font-size-sm;
+  }
+}
