@@ -1,3 +1,19 @@
-#main-container {
-  margin-top: $navigation-height-sm;
+#main-container:not(.home) {
+  margin: $main-gap $gap $gap;
+
+  .page {
+    &__main-title {
+      font-size: $font-size-xxl;
+      margin: $gap 0;
+    }
+
+    &__subtitle {
+      font-size: $font-size-lg;
+    }
+  }
+
+  .box {
+    margin: $gap 0;
+    line-height: 1.4;
+  }
 }

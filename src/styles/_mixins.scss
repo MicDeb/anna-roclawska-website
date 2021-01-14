@@ -161,11 +161,11 @@
   z-index: 2;
   content: "";
   opacity: .5;
-  background: $blue;
+  background: $black;
 }
 
 @mixin page-title {
   font-size: $font-size-title;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-weight: $font-weight-thin;
 }

@@ -1,7 +1,7 @@
 .navigation {
   position: fixed;
   top: 0;
-  background: $black;
+  //background: $black;
   z-index: 100;
   border-bottom: 1px solid transparent;
   width: 100%;
@@ -96,6 +96,7 @@
   transition: transform 0.3s ease-in-out;
   overflow-y: scroll;
   max-height: 100%;
+  z-index: 10;
 
   &--open {
     transform: translateX(0);
