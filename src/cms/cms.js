@@ -13,6 +13,7 @@ import ChoralMusicForChildrenPreview from './preview-templates/ChoralMusicForChi
 import ArrangementsPagePreview from './preview-templates/ArrangementsPagePreview';
 import TheaterMusicAndSongsPagePreview from './preview-templates/TheaterMusicAndSongsPagePreview';
 import ActorsAndArtisticSongPagePreview from './preview-templates/ActorsAndArtisticSongPagePreview';
+import ArtNVoicesPagePreview from './preview-templates/ArtNVoicesPagePreview';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -28,3 +29,4 @@ CMS.registerPreviewTemplate('choral-music-for-children', ChoralMusicForChildrenP
 CMS.registerPreviewTemplate('arrangements', ArrangementsPagePreview);
 CMS.registerPreviewTemplate('theater-music-and-song', TheaterMusicAndSongsPagePreview);
 CMS.registerPreviewTemplate('actors-and-artistic-song', ActorsAndArtisticSongPagePreview);
+CMS.registerPreviewTemplate('art-n-voices', ArtNVoicesPagePreview);
