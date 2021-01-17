@@ -1,5 +1,5 @@
 import '../styles/all.scss';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
@@ -11,6 +11,10 @@ import { withTrans } from '../i18n/withTrans';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+  const [mainClass, setMainClass] = useState('');
+  useEffect(() => {
+    setMainClass(children.props.path === '/' ? 'home' : trim(children.key, '/'));
+  }, [children]);
   // eslint-disable-next-line no-console
   console.log('children', children);
   return (
@@ -71,7 +75,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <main
         id='main-container'
-        className={`${ children.props.path === '/' ? 'home' : trim(children.key, '/') }`}
+        className={mainClass}
       >
         {children}
       </main>
