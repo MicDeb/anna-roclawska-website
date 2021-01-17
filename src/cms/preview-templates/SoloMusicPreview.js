@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SoloMusicPageTemplate } from 'src/templates/solo-music';
+import { MainTemplate } from 'components/MainTemplate';
 
 const SoloMusicPreview = ({ entry, widgetFor }) => (
-  <SoloMusicPageTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

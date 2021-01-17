@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SymphonicAndOrchestorMusicPageTemplate } from 'src/templates/symphonic-and-orchestor-music-page';
+import { MainTemplate } from 'components/MainTemplate';
 
 const SymphonicAndOrchestorMusicPreview = ({ entry, widgetFor }) => (
-  <SymphonicAndOrchestorMusicPageTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ChoralMusicPageTemplate } from 'src/templates/choral-music';
+import { MainTemplate } from 'components/MainTemplate';
 
 const ChoralMusicPreview = ({ entry, widgetFor }) => (
-  <ChoralMusicPageTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

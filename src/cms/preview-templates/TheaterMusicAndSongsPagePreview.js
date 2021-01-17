@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TheaterMusicAndSongsTemplate } from 'src/templates/theater-music-and-song';
+import { MainTemplate } from 'components/MainTemplate';
 
 const TheaterMusicAndSongsPagePreview = ({ entry, widgetFor }) => (
-  <TheaterMusicAndSongsTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

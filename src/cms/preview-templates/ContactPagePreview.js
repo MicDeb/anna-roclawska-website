@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ContactPageTemplate } from 'src/templates/contact-page';
+import { MainTemplate } from 'components/MainTemplate';
 
 const ContactPagePreview = ({ entry, widgetFor }) => (
-  <ContactPageTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

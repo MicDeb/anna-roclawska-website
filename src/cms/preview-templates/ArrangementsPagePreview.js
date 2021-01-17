@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ArrangementsTemplate } from 'src/templates/arrangements';
+import { MainTemplate } from 'components/MainTemplate';
 
 const ArrangementsPagePreview = ({ entry, widgetFor }) => (
-  <ArrangementsTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

@@ -1,22 +1,41 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import map from 'lodash/map';
+import includes from 'lodash/includes';
 import arrowIcon from 'src/img/arrow.svg';
 import { navigationItems } from './navigationItems';
+
+const initialChildMenuState = {
+  compositions: false,
+  chamber_music_activity: false,
+};
 
 export default function Menu({
   handleLanguageChange,
   language,
   isOpen,
   closeMenu,
+  location,
 }) {
   const { t } = useTranslation();
-  const [isChildMenuOpen, setChildMenuOpen] = useState({
-    compositions: false,
-    chamber_music_activity: false,
-  });
+  const [isChildMenuOpen, setChildMenuOpen] = useState(initialChildMenuState);
+
+  const toggleChildMenu = useCallback(() => {
+    let childMenuState = initialChildMenuState;
+    if (includes(location.pathname, '/compositions/')) {
+      childMenuState = { ...initialChildMenuState, compositions: true };
+    }
+    if (includes(location.pathname, '/chamber-music/')) {
+      childMenuState = { ...initialChildMenuState, chamber_music_activity: true };
+    }
+    setChildMenuOpen(childMenuState);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    toggleChildMenu();
+  }, [location.pathname, toggleChildMenu]);
 
   return (
     <div className={`navbar__menu ${ isOpen ? 'navbar__menu--open' : '' }`}>
@@ -24,7 +43,7 @@ export default function Menu({
         {map(navigationItems, (item) => (
           <li
             key={item.name}
-            className='navbar__menu--links-item'
+            className={`navbar__menu--links-item ${ location.pathname === item.location ? 'navbar__menu--links-item--active' : '' }`}
           >
             {item.location ? (
               <Link
@@ -60,7 +79,7 @@ export default function Menu({
                 {map(item.children, (navChildren) => (
                   <li
                     key={navChildren.name}
-                    className='menu-item-children--item'
+                    className={`menu-item-children--item ${ location.pathname === navChildren.location ? 'menu-item-children--item--active' : '' }`}
                   >
                     <Link
                       className='menu-item-children--item--link'
@@ -95,4 +114,5 @@ Menu.propTypes = {
   handleLanguageChange: PropTypes.func.isRequired,
   isOpen: PropTypes.bool.isRequired,
   language: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
 };

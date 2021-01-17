@@ -4,7 +4,23 @@
   .page {
     &__main-title {
       font-size: $font-size-xxl;
-      margin: $gap 0;
+      margin: 0 0 $gap * 2 0;
+      position: relative;
+      text-align: center;
+      //text-decoration: underline;
+      //text-decoration-color: $blue;
+
+      //&:before {
+      //  content: '';
+      //  width: 75%;
+      //  height: 3px;
+      //  background: #6F7A96;
+      //  display: block;
+      //  position: absolute;
+      //  bottom: -5px;
+      //  left: 50%;
+      //  transform: translate(-50%, 0);
+      //}
     }
 
     &__subtitle {

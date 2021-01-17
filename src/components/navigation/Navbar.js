@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Logo from 'src/components/Logo';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
 
-export default function Navbar() {
+export default function Navbar({ location }) {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = React.useState(false);
   const [language, setLanguage] = useState('pl');
@@ -42,7 +43,12 @@ export default function Navbar() {
         handleLanguageChange={handleLanguageChange}
         isOpen={isOpen}
         closeMenu={() => setIsOpen(false)}
+        location={location}
       />
     </>
   );
 }
+
+Navbar.propTypes = {
+  location: PropTypes.object.isRequired,
+};

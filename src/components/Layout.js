@@ -9,14 +9,15 @@ import Navbar from './navigation/Navbar';
 import useSiteMetadata from './SiteMetadata';
 import { withTrans } from '../i18n/withTrans';
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({
+  children, uri, location,
+}) => {
   const { title, description } = useSiteMetadata();
   const [mainClass, setMainClass] = useState('');
   useEffect(() => {
-    setMainClass(children.props.path === '/' ? 'home' : trim(children.key, '/'));
-  }, [children]);
-  // eslint-disable-next-line no-console
-  console.log('children', children);
+    setMainClass(uri === '/' ? 'home' : trim(uri, '/'));
+  }, [uri]);
+
   return (
     <div>
       <Helmet>
@@ -72,7 +73,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${ withPrefix('/') }img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
+      <Navbar location={location} />
       <main
         id='main-container'
         className={mainClass}
@@ -86,6 +87,8 @@ const TemplateWrapper = ({ children }) => {
 
 TemplateWrapper.propTypes = {
   children: PropTypes.node.isRequired,
+  location: PropTypes.object.isRequired,
+  uri: PropTypes.string.isRequired,
 };
 
 export default withTrans(TemplateWrapper);

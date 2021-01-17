@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BioPageTemplate } from 'src/templates/bio-page';
+import { MainTemplate } from 'components/MainTemplate';
 
 const BioPagePreview = ({ entry, widgetFor }) => (
-  <BioPageTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

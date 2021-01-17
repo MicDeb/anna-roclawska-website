@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ChamberMusicPageTemplate } from 'src/templates/chamber-music';
+import { MainTemplate } from 'components/MainTemplate';
 
 const ChamberMusicPreview = ({ entry, widgetFor }) => (
-  <ChamberMusicPageTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

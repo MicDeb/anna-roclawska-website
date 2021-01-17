@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ArtNVoicesPageTemplate } from 'src/templates/art-n-voices';
+import { MainTemplate } from 'components/MainTemplate';
 
 const ArtNVoicesPagePreview = ({ entry, widgetFor }) => (
-  <ArtNVoicesPageTemplate
+  <MainTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />
