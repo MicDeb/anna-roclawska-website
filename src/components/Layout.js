@@ -71,7 +71,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <main
         id='main-container'
-        className={`${ children.key === '/' ? 'home' : trim(children.key, '/') }`}
+        className={`${ children.props.path === '/' ? 'home' : trim(children.key, '/') }`}
       >
         {children}
       </main>
