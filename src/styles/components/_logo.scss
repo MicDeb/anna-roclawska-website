@@ -1,32 +1,53 @@
 .logo {
-  border: 1px solid $light-grey;
+  //border: 1px solid $light-grey;
   position: relative;
   font-size: $font-size-lg;
-  width: 50px;
+  //width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  //flex-direction: column;
   color: $light-grey;
+  //padding: 2px 4px;
+  //border-radius: 50%;
 
   p {
-    width: 100%;
+    //width: 100%;
     line-height: 1;
-    padding: 2px 4px;
+    //padding: 2px 4px;
+    font-family: 'Bilbo Swash Caps', sans-serif;
+    font-size: $font-size * 0.85;
+    padding: 4px;
 
     &:first-child {
-      text-align: right;
+      //text-align: right;
+    }
+    &.logo__name-initial {
+      font-size: $font-size-xxl;
+      //position: absolute;
+      text-align: center;
+      //opacity: .2;
     }
   }
 
-  &:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 1px;
-    height: 100%;
+  span {
+    //position: absolute;
+    //left: 50%;
+    //top: 0;
+    width: 5px;
+    height: 5px;
     background-color: $light-grey;
-    transform: rotate(-45deg) translateX(-50%);
+    transform: rotate(-45deg);
   }
+
+  //&:before {
+  //  content: '';
+  //  position: absolute;
+  //  left: 50%;
+  //  top: 0;
+  //  width: 1px;
+  //  height: 100%;
+  //  background-color: $light-grey;
+  //  transform: rotate(-45deg) translateX(-50%);
+  //}
 }

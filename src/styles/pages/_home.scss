@@ -7,6 +7,10 @@
     &:before {
       @include page-container-before;
     }
+
+    .professions {
+      height: 30px;
+    }
   }
 
   &__title,
@@ -34,6 +38,7 @@
   }
 
   &__subtitle {
-    font-weight: $font-weight-bold;
+    font-size: $font-size-xxl;
+    letter-spacing: .7rem;
   }
 }

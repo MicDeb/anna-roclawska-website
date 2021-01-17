@@ -158,7 +158,7 @@
   width: 100%;
   height: 100%;
   display: block;
-  z-index: 2;
+  //z-index: 2;
   content: "";
   opacity: .5;
   background: $black;
@@ -166,6 +166,5 @@
 
 @mixin page-title {
   font-size: $font-size-title;
-  //text-transform: uppercase;
   font-weight: $font-weight-thin;
 }

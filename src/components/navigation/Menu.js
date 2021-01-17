@@ -10,6 +10,7 @@ export default function Menu({
   handleLanguageChange,
   language,
   isOpen,
+  closeMenu,
 }) {
   const { t } = useTranslation();
   const [isChildMenuOpen, setChildMenuOpen] = useState({
@@ -21,11 +22,15 @@ export default function Menu({
     <div className={`navbar__menu ${ isOpen ? 'navbar__menu--open' : '' }`}>
       <ul className='navbar__menu--links'>
         {map(navigationItems, (item) => (
-          <li className='navbar__menu--links-item'>
+          <li
+            key={item.name}
+            className='navbar__menu--links-item'
+          >
             {item.location ? (
               <Link
                 className='navbar__menu--links-item--link'
                 to={item.location}
+                onClick={closeMenu}
               >
                 {t(`navigation.${ item.name }`)}
               </Link>
@@ -53,10 +58,14 @@ export default function Menu({
             {item.children && (
               <ul className={`menu-item-children ${ isChildMenuOpen[item.name] ? 'menu-item-children--active' : '' }`}>
                 {map(item.children, (navChildren) => (
-                  <li className='menu-item-children--item'>
+                  <li
+                    key={navChildren.name}
+                    className='menu-item-children--item'
+                  >
                     <Link
                       className='menu-item-children--item--link'
                       to={navChildren.location}
+                      onClick={closeMenu}
                     >
                       {t(`navigation.${ navChildren.name }`)}
                     </Link>
@@ -82,7 +91,8 @@ export default function Menu({
 }
 
 Menu.propTypes = {
+  closeMenu: PropTypes.func.isRequired,
   handleLanguageChange: PropTypes.func.isRequired,
-  language: PropTypes.string.isRequired,
   isOpen: PropTypes.bool.isRequired,
+  language: PropTypes.string.isRequired,
 };

@@ -53,5 +53,8 @@
     "thursday": "czwartek",
     "friday": "piątek",
     "saturday": "sobota"
-  }
+  },
+  "composer": "kompozytorka",
+  "pianist":  "pianistka",
+  "conductor": "dyrygentka"
 }

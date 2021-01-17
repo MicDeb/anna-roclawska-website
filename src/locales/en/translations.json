@@ -53,5 +53,8 @@
     "thursday": "Thursday",
     "friday": "Friday",
     "saturday": "Saturday"
-  }
+  },
+  "composer": "composer",
+  "pianist":  "pianist",
+  "conductor": "conductor"
 }

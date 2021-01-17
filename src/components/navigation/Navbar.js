@@ -41,6 +41,7 @@ export default function Navbar() {
         language={language}
         handleLanguageChange={handleLanguageChange}
         isOpen={isOpen}
+        closeMenu={() => setIsOpen(false)}
       />
     </>
   );
