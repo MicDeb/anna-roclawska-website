@@ -11,6 +11,8 @@ import { withTrans } from '../i18n/withTrans';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+  // eslint-disable-next-line no-console
+  console.log('children', children);
   return (
     <div>
       <Helmet>
