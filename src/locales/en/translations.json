@@ -21,6 +21,24 @@
     "actors_and_artistic_song": "Actor's and artistic song",
     "tapering": "Tapering"
   },
+  "home": "Home",
+  "bio": "Bio",
+  "compositions": "Compositions",
+  "chamber_music_activity": "Chamber music",
+  "art_n_voices": "Art’n’Voices",
+  "cds": "CDs",
+  "gallery": "Gallery",
+  "contact": "Contact",
+  "symphonic_and_orchestor_music": "Symphonic and orchestral music",
+  "chamber_music": "Chamber music",
+  "solo_music": "Solo music",
+  "choral_music": "Choral music",
+  "choral_music_for_children": "Choral music for children",
+  "arrangements": "Arrangements",
+  "theater_music_and_song": "Theater music and song",
+  "classical_music": "Classical music",
+  "actors_and_artistic_song": "Actor's and artistic song",
+  "tapering": "Tapering",
   "home": {
     "subtitle": "Actor | Vocalist | Vocal coach"
   },
@@ -56,5 +74,6 @@
   },
   "composer": "composer",
   "pianist":  "pianist",
-  "conductor": "conductor"
+  "conductor": "conductor",
+  "details": "details"
 }

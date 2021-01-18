@@ -1,7 +1,7 @@
 ---
 templateKey: arrangements
 path: /compositions/arrangements
-title: Arrangements
+title: arrangements
 ---
 
 <div class="box works-box">
@@ -13,6 +13,8 @@ title: Arrangements
         <iframe width="956" height="538" src="https://www.youtube.com/embed/HZ6jEe7eVgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">„Wśród ciszy” – 11 aranżacji kolęd na sopran solo, chór mieszany, obój, fortepian i orkiestrę smyczkową</p>
@@ -27,6 +29,8 @@ title: Arrangements
         <iframe width="956" height="538" src="https://www.youtube.com/embed/6jByizWItGQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">Andrzej Zieliński/ arr. A. Rocławska-Musiałczyk -  „W żółtych płomieniach liści”</p>

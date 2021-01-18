@@ -1,7 +1,7 @@
 ---
 templateKey: symphonic-and-orchestor-music-page
 path: /compositions/symphonic-and-orchestor-music
-title: Symphonic and orchestor music
+title: symphonic_and_orchestor_music
 ---
 
 <div class="box works-box">
@@ -14,6 +14,8 @@ title: Symphonic and orchestor music
         <iframe width="956" height="538" src="https://www.youtube.com/embed/ZUttyAsh930" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">Anna Rocławska-Musiałczyk – „Oblivion” wersja na skrzypce i altówkę solo oraz orkiestrę smyczkową</p>

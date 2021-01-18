@@ -1,7 +1,7 @@
 ---
 templateKey: actors-and-artistic-song
 path: /chamber-music/actors-and-artistic-song
-title: Actors and artistic song
+title: actors_and_artistic_song
 ---
 
 <div class="box works-box">
@@ -18,6 +18,7 @@ title: Actors and artistic song
     </div>
 </div>
 
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">A. Rocławska-Musiałczyk – Lililôj, Malinczi</p>

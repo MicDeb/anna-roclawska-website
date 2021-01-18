@@ -1,15 +1,6 @@
 .works {
   &-box {
     margin-bottom: $gap-lg;
-
-    &:not(:last-child):after {
-      content: '';
-      width: 70%;
-      height: 1px;
-      background: $light-grey;
-      display: block;
-      margin: auto;
-    }
   }
   &__title {
     font-size: $font-size-lg;

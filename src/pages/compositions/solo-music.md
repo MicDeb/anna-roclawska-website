@@ -1,7 +1,7 @@
 ---
 templateKey: solo-music
 path: /compositions/solo-music
-title: Solo music
+title: solo_music
 ---
 <div class="box works-box">
     <p class="works__title">Anna Rocławska-Musiałczyk – “Meantime” cz. I i II</p>

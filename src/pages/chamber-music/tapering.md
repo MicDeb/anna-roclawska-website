@@ -1,7 +1,7 @@
 ---
 templateKey: tapering
 path: /chamber-music/tapering
-title: Tapering
+title: tapering
 ---
 
 <div class="box works-box">
@@ -12,6 +12,8 @@ title: Tapering
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/g9QPH6aZ2hM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">

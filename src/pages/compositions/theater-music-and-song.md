@@ -1,7 +1,7 @@
 ---
 templateKey: theater-music-and-song
 path: /compositions/theater-music-and-song
-title: Theater music and song
+title: theater_music_and_song
 ---
 
 <div class="box works-box">
@@ -16,6 +16,8 @@ title: Theater music and song
         <iframe width="956" height="538" src="https://www.youtube.com/embed/uMkXWe2czXg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">„Kamyk w bucie” słowa Maria Pieczonka</p>

@@ -36,6 +36,7 @@
     "react-i18next": "^11.8.4",
     "react-photo-gallery": "^8.0.0",
     "react-spring": "^8.0.27",
+    "resize-observer-polyfill": "^1.5.1",
     "uuid": "^7.0.0"
   },
   "keywords": [

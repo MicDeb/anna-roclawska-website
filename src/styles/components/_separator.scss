@@ -3,16 +3,17 @@
   justify-content: center;
   align-items: center;
   margin: 1rem;
-  line-height: 1;
-  color: $light-grey;
   z-index: 4;
+  position: relative;
 
-  &:before,
-  &:after {
-    content: '';
-    width: 100px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
     height: 1px;
-    background: $light-grey;
-    margin: 0 20px;
+    background-image: linear-gradient(to right, transparent, $light-brown, transparent);
   }
 }

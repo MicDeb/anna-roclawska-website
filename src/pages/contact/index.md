@@ -4,4 +4,5 @@ path: /contact
 title: CONTACT
 ---
 
-<p>a-roclawska@wp.pl</p>
+<p class="contact__email">a-roclawska@wp.pl</p>
+<div class="separator"></div>

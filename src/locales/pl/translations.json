@@ -21,6 +21,24 @@
     "actors_and_artistic_song": "Piosenka aktorska i artystyczna",
     "tapering": "Taperowanie (impowizacja na żywo do filmów)"
   },
+  "home": "Strona główna",
+  "bio": "Bio",
+  "compositions": "Twórczość",
+  "chamber_music_activity": "Działalność kameralna",
+  "art_n_voices": "Art’n’Voices",
+  "cds": "Płyty",
+  "gallery": "Galeria",
+  "contact": "Kontakt",
+  "symphonic_and_orchestor_music": "Muzyka symfoniczna i orkiestrowa",
+  "chamber_music": "Muzyka kameralna",
+  "solo_music": "Muzyka solowa",
+  "choral_music": "Muzyka chóralna",
+  "choral_music_for_children": "Muzyka chóralna dla dzieci",
+  "arrangements": "Aranżacje",
+  "theater_music_and_song": "Muzyka teatralna i piosenka",
+  "classical_music": "Muzyka klasyczna",
+  "actors_and_artistic_song": "Piosenka aktorska i artystyczna",
+  "tapering": "Taperowanie (impowizacja na żywo do filmów)",
   "home": {
     "subtitle": "Aktor | Wokalista | Trener wokalny"
   },
@@ -56,5 +74,6 @@
   },
   "composer": "kompozytorka",
   "pianist":  "pianistka",
-  "conductor": "dyrygentka"
+  "conductor": "dyrygentka",
+  "details": "szczegóły"
 }

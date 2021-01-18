@@ -2,17 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { HTMLContent } from 'components/Content';
-import { MainTemplate } from 'components/MainTemplate';
+import { ContactTemplate } from 'components/ContactTemplate';
 
 const ContactPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <MainTemplate
+    <ContactTemplate
       contentComponent={HTMLContent}
-      title={post.frontmatter.title}
       content={post.html}
-      helmetTitle='navigation.arrangements'
+      helmetTitle='navigation.contact'
     />
   );
 };

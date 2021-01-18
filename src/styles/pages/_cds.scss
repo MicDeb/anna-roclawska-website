@@ -1,0 +1,27 @@
+.cds {
+  &-box {
+    &__title {
+      margin-bottom: $gap-sm;
+    }
+
+    &__details {
+      display: flex;
+      justify-content: flex-end;
+
+      span {
+        position: relative;
+        font-size: $font-size-sm;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 5%;
+          right: 5%;
+          width: 100%;
+          height: 1px;
+          background-image: linear-gradient(to right, transparent, $light-brown, transparent);
+        }
+      }
+    }
+  }
+}

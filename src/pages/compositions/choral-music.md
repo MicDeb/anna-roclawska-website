@@ -1,7 +1,7 @@
 ---
 templateKey: choral-music
 path: /compositions/choral-music
-title: Choral music
+title: choral_music
 ---
 
 <div class="box works-box">
@@ -15,6 +15,8 @@ title: Choral music
     </div>
 </div>
 
+<div class="separator m-2"></div>
+
 <div class="box works-box">
     <p class="works__title">Anna Rocławska-Musiałczyk – „Bibi, Synkù, Bi – parafraza kolędy kaszubskiej W. Frankowskiej”</p>
     <ul class="works__performers">
@@ -26,6 +28,8 @@ title: Choral music
     </div>
 </div>
 
+<div class="separator m-2"></div>
+
 <div class="box works-box">
     <p class="works__title">Anna Rocławska-Musiałczyk – „Ave Maria”</p>
 <ul class="works__performers">
@@ -36,6 +40,8 @@ title: Choral music
         <iframe width="956" height="538" src="https://www.youtube.com/embed/LBmmg8BBX1Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">Anna Rocławska-Musiałczyk – „Stacja XII - Ukrzyżowanie. Kościół Trzech Krzyży” ( „Droga Krzyżowa z Chrystusem na Kalwarii Wejherowskiej”)</p>

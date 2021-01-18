@@ -1,7 +1,7 @@
 ---
 templateKey: choral-music-for-children
 path: /compositions/choral-music-for-children
-title: Choral music for children
+title: choral_music_for_children
 ---
 
 <div class="box works-box">
@@ -16,6 +16,8 @@ title: Choral music for children
         <iframe width="956" height="538" src="https://www.youtube.com/embed/oFvUfw0jyNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">Anna Rocławska-Musiałczyk – „Deszcz”</p>

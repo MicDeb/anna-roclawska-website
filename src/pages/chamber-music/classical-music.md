@@ -1,7 +1,7 @@
 ---
 templateKey: classical-music
 path: /chamber-music/classical-music
-title: Classical music
+title: classical_music
 ---
 
 <div class="box works-box">

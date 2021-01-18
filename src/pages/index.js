@@ -2,7 +2,6 @@ import React, { useEffect, useState, Children } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
-import Separator from 'components/Separator';
 import { useTrail, a } from 'react-spring';
 import { Spring } from 'react-spring/renderprops';
 
@@ -80,8 +79,6 @@ const Index = () => {
                 </p>
               </h2>
             </Trail>
-
-            <Separator />
 
             <div className='professions'>
               {professions.map((profession, index) => {

@@ -1,7 +1,7 @@
 ---
 templateKey: chamber-music
 path: /compositions/chamber-music
-title: Chamber music
+title: chamber_music
 ---
 
 <div class="box works-box">
@@ -17,6 +17,8 @@ title: Chamber music
     </div>
 </div>
 
+<div class="separator m-2"></div>
+
 <div class="box works-box">
     <p class="works__title">
         Anna Rocławska-Musiałczyk – Psalm 27 na sopran i kontratenor a cappella (w języku kaszubskim)
@@ -28,6 +30,8 @@ title: Chamber music
         <iframe width="717" height="538" src="https://www.youtube.com/embed/x6b5DJfBdWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="separator m-2"></div>
 
 <div class="box works-box">
     <p class="works__title">
