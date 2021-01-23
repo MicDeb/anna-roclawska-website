@@ -5,8 +5,9 @@ title: chamber_music
 ---
 
 <div class="box works-box">
-    <p class="works__title">Anna Rocławska-Musiałczyk – “Two contrasts for a duo”</p>
+    <p class="works__title">Anna Rocławska-Musiałczyk –  Two contrasts for a duo</p>
     <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>duet skrzypcowy Gidaszewska/Łaguniak Duo</li>
     </ul>
     <p class="works__details">
@@ -17,12 +18,20 @@ title: chamber_music
     </div>
 </div>
 
-<div class="separator m-2"></div>
+<div class="separator m-3"></div>
 
 <div class="box works-box">
     <p class="works__title">
-        Anna Rocławska-Musiałczyk – Psalm 27 na sopran i kontratenor a cappella (w języku kaszubskim)
+        Anna Rocławska-Musiałczyk – Jahwe widã i zbawienim
     </p>
+    <p class="works__subtitle">
+        Psalm 27 na sopran i kontratenor a cappella
+    </p>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
+        <li>Marzena Michałowska - sopran</li>
+        <li>Sławomir Bronk - kontratenor</li>
+    </ul>
     <p class="works__details">
         Płyta W céni Bòżëch skrzidłów  2018  na sopran, kontratenor i organy. Psalmy w języku kaszubskim
     </p>
@@ -31,12 +40,19 @@ title: chamber_music
     </div>
 </div>
 
-<div class="separator m-2"></div>
+<div class="separator m-3"></div>
 
 <div class="box works-box">
     <p class="works__title">
-        Anna Rocławska-Musiałczyk – „…and calm…” na kwintet klarnetowo-bassethornowy
+        Anna Rocławska-Musiałczyk – …and calm…
     </p>
+    <p class="works__subtitle">
+        na kwintet klarnetowo-bassethornowy
+    </p>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
+        <li>Polish Basset Horn Ensemble</li>
+    </ul>
     <p class="works__details">
         live Festiwal Gran Canaria Clarinet 2018
     </p>

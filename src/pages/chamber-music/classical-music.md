@@ -5,9 +5,10 @@ title: classical_music
 ---
 
 <div class="box works-box">
-    <p class="works__title">G. Charpentier – Louise „Depuis le jour”</p>
+    <p class="works__title">G. Charpentier – Louise Depuis le jour</p>
     <ul class="works__performers">
-        <li>Małgorzata Rocławska-sopran</li>
+        <li class="works__performers--title">Wykonawcy:</li>
+        <li>Małgorzata Rocławska - sopran</li>
         <li>Anna Rocławska-Musiałczyk – fortepian</li>
     </ul>
     <p class="works__details">Nagranie 2020</p>

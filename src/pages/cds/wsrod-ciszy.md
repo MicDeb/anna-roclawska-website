@@ -21,9 +21,6 @@ title: Wśród ciszy 2020
             Bałtycka Filharmonia Młodych
         </li>
         <li>
-            Błażej Połom – dyrygent
-        </li>
-        <li>
             Małgorzata Rocławska – sopran
         </li>
         <li>
@@ -32,41 +29,16 @@ title: Wśród ciszy 2020
         <li>
             Anna Rocławska-Musiałczyk – fortepian
         </li>
+        <li>
+            Błażej Połom – dyrygent
+        </li>
     </ul>
 </div>
 
 <div class="box cds-box">
     <ul>
         <li>
-            Aranżacja: Anna Rocławska-Musiałczyk
-        </li>
-        <li>
-            Przygotowanie chóru: Błażej Połom, Jerzy Szarafiński
-        </li>
-        <li>
-            Przygotowanie orkiestry: Sylwia Janiak-Kobylińska
-        </li>
-        <li>
-            Nagrania zrealizowano w Radiu Gdańsk i auli Maximus na Wydziale Farmaceutycznym
-            Gdańskiego Uniwersytetu Medycznego w październiku 2020 roku.
-        </li>
-        <li>
             Realizacja, edycja i mastering nagrań: Studio MTS Mariusz Zaczkowski / studiomts.pl
-        </li>
-        <li>
-            Projekt graficzny: Marsija
-        </li>
-        <li>
-            Fotografie: Dar Giers / raddar.pl
-        </li>
-        <li>
-            Korekta: Agata Górzyńska-Kielak
-        </li>
-        <li>
-            Chór w sieci: chor.gumed.org.pl, facebook.com/ChorGUMED
-        </li>
-        <li>
-            Wydawca: © Studio MTS 2020, MTS CD-042s
         </li>
     </ul>
 </div>

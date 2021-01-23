@@ -12,7 +12,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font: inherit;
   font-size: 100%;
-  font-family: 'Cinzel', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
   vertical-align: baseline;
   line-height: 1.4;
 
@@ -100,6 +102,6 @@ button {
   line-height: 1.4;
 }
 
-.m-2 {
-  margin: 2rem!important;
+.m-3 {
+  margin: 3rem!important;
 }

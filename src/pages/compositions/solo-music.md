@@ -4,8 +4,13 @@ path: /compositions/solo-music
 title: solo_music
 ---
 <div class="box works-box">
-    <p class="works__title">Anna Rocławska-Musiałczyk – “Meantime” cz. I i II</p>
+    <p class="works__title">Anna Rocławska-Musiałczyk –  Meantime</p>
+    <p class="works__subtitle">
+        część I Mean… <br />
+        część II ...Time
+    </p>
     <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>Elżbieta Rosińska</li>
     </ul>
     <p class="works__details">

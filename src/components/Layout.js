@@ -6,6 +6,7 @@ import { withPrefix } from 'gatsby';
 import trim from 'lodash/trim';
 // import Footer from './Footer';
 import Navbar from './navigation/Navbar';
+// import SocialNavigation from './navigation/SocialNavigation';
 import useSiteMetadata from './SiteMetadata';
 import { withTrans } from '../i18n/withTrans';
 
@@ -80,6 +81,7 @@ const TemplateWrapper = ({
       >
         {children}
       </main>
+      {/* <SocialNavigation /> */}
       {/* <Footer /> */}
     </div>
   );

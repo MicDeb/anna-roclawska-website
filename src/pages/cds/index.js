@@ -14,7 +14,7 @@ export default function Cds() {
         <h2 className='page__main-title'>
           {t('navigation.cds')}
         </h2>
-        <Separator margin={2} />
+        <Separator margin={3} />
         {cdsList.map((cd, index) => (
           <Fragment key={cd.title}>
             <div
@@ -32,7 +32,7 @@ export default function Cds() {
               </Link>
             </div>
             {index < (cdsList.length - 1) && (
-              <Separator margin={2} />
+              <Separator margin={3} />
             )}
           </Fragment>
 

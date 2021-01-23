@@ -35,8 +35,10 @@
     "react-helmet": "^6.0.0",
     "react-i18next": "^11.8.4",
     "react-photo-gallery": "^8.0.0",
+    "react-slick": "^0.27.14",
     "react-spring": "^8.0.27",
     "resize-observer-polyfill": "^1.5.1",
+    "slick-carousel": "^1.8.1",
     "uuid": "^7.0.0"
   },
   "keywords": [

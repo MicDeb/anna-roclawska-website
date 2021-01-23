@@ -5,6 +5,9 @@ import { Helmet } from 'react-helmet';
 import { useTrail, a } from 'react-spring';
 import { Spring } from 'react-spring/renderprops';
 
+import Recommendations from 'src/components/Recommendations';
+import ScrollBottom from 'src/components/ScrollBottom';
+
 function Trail({ children, itemHeight, ...props }) {
   const items = Children.toArray(children);
   const trail = useTrail(items.length, {
@@ -65,37 +68,41 @@ const Index = () => {
         config={{ mass: 1, tension: 500, friction: 1200 }}
       >
         {(props) => (
-          <div
-            style={props}
-            className='home-page-container'
-          >
-            <Trail itemHeight={170}>
-              <h2 className='home-page__title'>
-                <p className='home-page__title--name'>
-                  Anna
-                </p>
-                <p className='home-page__title--surname'>
-                  Rocławska-Musiałczyk
-                </p>
-              </h2>
-            </Trail>
+          <>
+            <div
+              style={props}
+              className='home-page-container'
+            >
+              <Trail itemHeight={170}>
+                <h2 className='home-page__title'>
+                  <p className='home-page__title--name'>
+                    Anna
+                  </p>
+                  <p className='home-page__title--surname'>
+                    Rocławska-Musiałczyk
+                  </p>
+                </h2>
+              </Trail>
 
-            <div className='professions'>
-              {professions.map((profession, index) => {
-                if (index === professionIndex) {
-                  return (
-                    <Trail
-                      key={profession}
-                      itemHeight={30}
-                    >
-                      <span className='home-page__subtitle'>{t(profession)}</span>
-                    </Trail>
-                  );
-                }
-                return null;
-              })}
+              <div className='professions'>
+                {professions.map((profession, index) => {
+                  if (index === professionIndex) {
+                    return (
+                      <Trail
+                        key={profession}
+                        itemHeight={30}
+                      >
+                        <span className='home-page__subtitle'>{t(profession)}</span>
+                      </Trail>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
+              <ScrollBottom />
             </div>
-          </div>
+            <Recommendations />
+          </>
         )}
       </Spring>
     </section>

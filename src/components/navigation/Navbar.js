@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import Logo from 'src/components/Logo';
+// import Logo from 'src/components/Logo';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
+import SocialNavigation from './SocialNavigation';
 
 export default function Navbar({ location }) {
   const { i18n } = useTranslation();
@@ -31,7 +32,8 @@ export default function Navbar({ location }) {
           role='navigation'
           aria-label='main-navigation'
         >
-          <Logo />
+          {/* <Logo /> */}
+          <SocialNavigation />
           <Hamburger
             isOpen={isOpen}
             setOpen={toggleHamburger}

@@ -82,7 +82,7 @@ export default function Contact() {
         <h2 className='page__main-title'>
           {t('navigation.gallery')}
         </h2>
-        <Separator margin={2} />
+        <Separator margin={3} />
         <GridGallery />
       </div>
     </section>

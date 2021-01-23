@@ -18,7 +18,7 @@ export const MainTemplate = ({
         <h2 className='page__main-title'>
           {t(title)}
         </h2>
-        <Separator margin={2} />
+        <Separator margin={3} />
         <PageContent
           className='content'
           content={content}

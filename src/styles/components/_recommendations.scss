@@ -1,0 +1,53 @@
+.recommendations {
+  width: auto;
+  margin: $gap * 4 $gap;
+
+  &__box {
+    padding: $gap;
+    text-align: center;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      border-top: 1px solid;
+      border-left: 1px solid;
+    }
+
+    &:after {
+      bottom: 0;
+      right: 0;
+      border-bottom: 1px solid;
+      border-right: 1px solid;
+    }
+
+    &--description {
+      margin-bottom: $gap;
+      font-style: italic;
+
+      &:after {
+        content: "";
+        width: 90%;
+        height: 1px;
+        background-image: linear-gradient(to right, transparent, $light-brown, transparent);
+        display: block;
+        margin-top: $gap;
+      }
+    }
+
+    &--author {
+      .author-professions {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

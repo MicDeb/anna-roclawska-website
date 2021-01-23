@@ -5,35 +5,41 @@ title: choral_music
 ---
 
 <div class="box works-box">
-    <p class="works__title">Anna Rocławska-Musiałczyk – „…dotknięciem chwili…”</p>
+    <p class="works__title">Anna Rocławska-Musiałczyk – …dotknięciem chwili…</p>
     <ul class="works__performers">
-        <li>Polski Narodowy Chór Młodzieżowy pod dyr. Agnieszki Franków-Żelazny</li>
+        <li class="works__performers--title">Wykonawcy:</li>
+        <li>Polski Narodowy Chór Młodzieżowy</li>
+        <li>Agnieszka Franków-Żelazny - dyrygent</li>
     </ul>
-    <p class="works__details">„Śpiewajmy” Młodzi Młodym płyta NFM, 2019</p>
+    <p class="works__details">Nagranie z płyty „Śpiewajmy” Młodzi Młodym płyta NFM 2019</p>
     <div class="youtube-movie">
         <iframe width="956" height="538" src="https://www.youtube.com/embed/wqMdJ-n5nVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
-<div class="separator m-2"></div>
+<div class="separator m-3"></div>
 
 <div class="box works-box">
-    <p class="works__title">Anna Rocławska-Musiałczyk – „Bibi, Synkù, Bi – parafraza kolędy kaszubskiej W. Frankowskiej”</p>
+    <p class="works__title">Anna Rocławska-Musiałczyk – Bibi, Synkù, Bi</p>
+    <p class="works__subtitle">– parafraza kolędy kaszubskiej W. Frankowskiej</p>
     <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>Zespół Wokalny Art’n’Voices</li>
     </ul>
-    <p class="works__details">(„Midnight Stories” DUX), 2020</p>
+    <p class="works__details">Nagranie z płyty Midnight Stories” DUX 2020</p>
     <div class="youtube-movie">
         <iframe width="956" height="538" src="https://www.youtube.com/embed/cAQubP7Mx3c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
-<div class="separator m-2"></div>
+<div class="separator m-3"></div>
 
 <div class="box works-box">
-    <p class="works__title">Anna Rocławska-Musiałczyk – „Ave Maria”</p>
-<ul class="works__performers">
-        <li>Chór Żeński Cartusia pod dyr. Małgorzaty Kuchtyk</li>
+    <p class="works__title">Anna Rocławska-Musiałczyk – Ave Maria</p>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
+        <li>Chór Żeński Cartusia</li>
+        <li>Małgorzata Kuchtyk</li>
     </ul>
     <p class="works__details">Nagranie live, 2018</p>
     <div class="youtube-movie">
@@ -41,13 +47,20 @@ title: choral_music
     </div>
 </div>
 
-<div class="separator m-2"></div>
+<div class="separator m-3"></div>
 
 <div class="box works-box">
-    <p class="works__title">Anna Rocławska-Musiałczyk – „Stacja XII - Ukrzyżowanie. Kościół Trzech Krzyży” ( „Droga Krzyżowa z Chrystusem na Kalwarii Wejherowskiej”)</p>
+    <p class="works__title">Anna Rocławska-Musiałczyk – Stacja XII</p>
+    <p class="works__subtitle">
+        Ukrzyżowanie. Kościół Trzech Krzyży” <br />
+        („Droga Krzyżowa z Chrystusem na Kalwarii Wejherowskiej”)
+    </p>
     <ul class="works__performers">
-        <li>Chór Kameralny Continuo pod dyr. Arkadiusza Wanata</li>
+        <li class="works__performers--title">Wykonawcy:</li>
+        <li>Sopocki Chór Kameralny Continuo</li>
+        <li>Arkadiusz Wanat - dyrygent</li>
     </ul>
+    <p class="works__details">Nagranie live, 2020</p>
     <div class="youtube-movie">
         <iframe width="956" height="538" src="https://www.youtube.com/embed/84M3ZDz4Zao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>

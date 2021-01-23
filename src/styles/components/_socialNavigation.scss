@@ -1,0 +1,19 @@
+.social-navigation {
+  //position: fixed;
+  //bottom: 10px;
+  //width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+}

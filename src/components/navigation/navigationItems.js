@@ -1,5 +1,7 @@
 import facebook from 'src/img/social/facebook.svg';
 import instagram from 'src/img/social/instagram.svg';
+import youtube from 'src/img/social/youtube.svg';
+import spotify from 'src/img/social/spotify.svg';
 
 export const navigationItems = Object.freeze([
   { location: '/', name: 'home' },
@@ -64,15 +66,27 @@ export const navigationItems = Object.freeze([
 
 export const socialNavigationItems = Object.freeze([
   {
-    location: 'https://facebook.com',
+    location: 'https://www.m.facebook.com/Anna-Roc%C5%82awska-Musia%C5%82czyk_composer-103422315059712/',
     name: 'facebook',
     icon: facebook,
     alt: 'Facebook icon',
   },
   {
-    location: '/https://instagram.com',
+    location: 'https://www.instagram.com/anna_composer/',
     name: 'instagram',
     icon: instagram,
     alt: 'Instagram icon',
+  },
+  {
+    location: 'https://open.spotify.com/artist/7aTSnGenGlNoRrRzXgTbSe',
+    name: 'spotify',
+    icon: spotify,
+    alt: 'Spotify icon',
+  },
+  {
+    location: 'https://www.youtube.com/channel/UCCjbzKxJH0s47mqzX3Bb19Q',
+    name: 'youtube',
+    icon: youtube,
+    alt: 'Youtube icon',
   },
 ]);

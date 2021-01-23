@@ -16,14 +16,9 @@ export const cdsList = [
     img: WsrodCiszy,
   },
   {
-    path: '/cds/w-ceni-bozech-skrzidlow',
-    title: 'W céni Bożëch skrzidłów',
-    img: WCeniBozechSkrzidlow,
-  },
-  {
-    path: '/cds/spiewajmy-mlodzi-mlodym',
-    title: 'Śpiewajmy. Młodzi-młodym. Polski Narodowy Chór Młodzieżowy',
-    img: SpiewajmyMlodziMlodym,
+    path: '/cds/midnight-stories',
+    title: 'Midnight Stories',
+    img: MidnightStories,
   },
   {
     path: '/cds/piosenki-na-depresje',
@@ -31,14 +26,9 @@ export const cdsList = [
     img: PiosenkiNaDepresje,
   },
   {
-    path: '/cds/midnight-stories',
-    title: 'Midnight Stories',
-    img: MidnightStories,
-  },
-  {
-    path: '/cds/koledy-europejskie',
-    title: 'Kolędy europejskie',
-    img: KoledyEuropejskie,
+    path: '/cds/benefis-dojrzalosci',
+    title: 'Benefis Dojrzałości',
+    img: BenefisDojrzalosci,
   },
   {
     path: '/cds/heaven-kiedy-niebo-zstepuje-na-ziemie',
@@ -46,18 +36,28 @@ export const cdsList = [
     img: HeavenKiedyNieboZstepujeNaZiemie,
   },
   {
-    path: '/cds/droga-krzyzowa-z-chrystusem-na-kalwarii-wejherowskiej',
-    title: 'Droga Krzyżowa. Z Chrystusem na Kalwarii Wejherowskiej',
-    img: DrogaKrzyzowaZChrystusemNaKalwariiWejherowskiej,
-  },
-  {
-    path: '/cds/benefis-dojrzalosci',
-    title: 'Benefis Dojrzałości',
-    img: BenefisDojrzalosci,
-  },
-  {
     path: '/cds/art-n-voices-live-in-provence',
     title: 'Art’n’Voices  live in Provence',
     img: ArtNVoicesLiveInProvence,
+  },
+  {
+    path: '/cds/spiewajmy-mlodzi-mlodym',
+    title: 'Śpiewajmy. Młodzi-młodym. Polski Narodowy Chór Młodzieżowy',
+    img: SpiewajmyMlodziMlodym,
+  },
+  {
+    path: '/cds/w-ceni-bozech-skrzidlow',
+    title: 'W céni Bożëch skrzidłów',
+    img: WCeniBozechSkrzidlow,
+  },
+  {
+    path: '/cds/koledy-europejskie',
+    title: 'Kolędy europejskie',
+    img: KoledyEuropejskie,
+  },
+  {
+    path: '/cds/droga-krzyzowa-z-chrystusem-na-kalwarii-wejherowskiej',
+    title: 'Droga Krzyżowa. Z Chrystusem na Kalwarii Wejherowskiej',
+    img: DrogaKrzyzowaZChrystusemNaKalwariiWejherowskiej,
   },
 ];
