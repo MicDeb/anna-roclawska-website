@@ -1,5 +1,7 @@
 import '../styles/all.scss';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, {
+  useCallback, useEffect, useState, useRef,
+} from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
@@ -16,7 +18,7 @@ import { withTrans } from '../i18n/withTrans';
 const TemplateWrapper = ({
   children, uri, location,
 }) => {
-  const [music] = useState(new Audio(BibiMusic));
+  const music = useRef({ current: null });
   const { title, description } = useSiteMetadata();
   const [mainClass, setMainClass] = useState('');
   const [startWithMusic, setStartWithMusic] = useState(sessionStorage.getItem('startPageWithMusic'));
@@ -32,10 +34,12 @@ const TemplateWrapper = ({
   }, [uri]);
 
   useEffect(() => {
-    if (startWithMusic === 'true') {
-      music.play();
-    } else {
-      music.pause();
+    if (music.current) {
+      if (startWithMusic === 'true') {
+        music.current.play();
+      } else {
+        music.current.pause();
+      }
     }
 
     return () => {
@@ -44,8 +48,8 @@ const TemplateWrapper = ({
   }, [music, startWithMusic]);
 
   useEffect(() => {
-    if (music && startWithMusic === 'true') {
-      music.onended = () => setStartWithMusic('false');
+    if (music.current && startWithMusic === 'true') {
+      music.current.onended = () => setStartWithMusic('false');
     }
   }, [music, startWithMusic]);
 
@@ -112,6 +116,15 @@ const TemplateWrapper = ({
           content={`${ withPrefix('/') }img/og-image.jpg`}
         />
       </Helmet>
+      <audio
+        controls
+        src={BibiMusic}
+        type='audio/mpeg'
+        ref={music}
+        className='main-audio-player'
+      >
+        <track kind='captions' />
+      </audio>
       <Spring
         from={{ opacity: 0 }}
         to={{ opacity: 1 }}
