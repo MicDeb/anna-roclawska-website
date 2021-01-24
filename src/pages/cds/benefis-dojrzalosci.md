@@ -9,43 +9,43 @@ title: Benefis Dojrzałości 2020
     </div>
 </div>
 <div class="box cds-box">
-    Materiał nagrany w ramach organizacji edycji online wydarzenia BENEFIS DOJRZAŁOŚCI GDAŃSK 2020 w sierpniu i wrześniu 2020 r.
-    w Studio im. Janusza Hajduna (Radio Gdańsk) oraz w Studio MTS Mariusza Zaczkowskiego.
-    Mix, mastering, przygotowanie płyty CD Mariusz Zaczkowski
+    Materiał nagrany w ramach organizacji edycji online wydarzenia BENEFIS DOJRZAŁOŚCI
 </div>
 <div class="box cds-box">
-    Wykonawcy:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>
-            Aleksandra Gotowicka, Katarzyna Golecka, Przemysław Radziszewski, Monika Kijek, Agata Dukalska , Patrycja Mizerska, Jakub Kornacki
-        </li>
+            Aleksandra Gotowicka, Katarzyna Golecka, Przemysław Radziszewski, Monika Kijek, Agata Dukalska , Patrycja Mizerska, Jakub Kornacki - wokale        </li>
         <li>
-            Bałtycka Filharmonia Młodych pod dyrekcją Sylwii Janiak-Kobylińskiej            
+            Bałtycka Filharmonia Młodych            
         </li>
         <li>
             Kwartet Cappelli Gedanensis
         </li>
         <li>
-            saksofon solo Szymon Kowalik
+            Szymon Kowalik - saksofon
         </li>
         <li>
-            saksofon solo Przemysław Dyakowski
+            Przemysław Dyakowski - saksofon
         </li>
         <li>
-            gitara basowa solo Janusz „Macek” Mackiewicz
+            Janusz „Macek” Mackiewicz - gitara basowa
         </li>
         <li>
-            Chór Wydziału Zarządzania Uniwersytetu Gdańskiego „Non Serio” pod dyrekcją Beaty Borowicz
+            Chór Wydziału Zarządzania Uniwersytetu Gdańskiego „Non Serio”
         </li>
         <li>
-            Chór Camerata Santa Cecilia pod dyrekcją Tatiany Adamkowicz
+            Chór Camerata Santa Cecilia
+        </li>
+        <li>
+            Sylwia Janiak-Kobylińska - dyrygent
         </li>
     </ul>
 </div>
 
 <div class="box cds-box">
-    Kompozytorzy utworów:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Kompozytorzy utworów:</li>
         <li>
             Joanna Złotkowska
         </li>
@@ -63,6 +63,15 @@ title: Benefis Dojrzałości 2020
         </li>
         <li>
             Kamil Cieślik
+        </li>
+    </ul>
+</div>
+
+<div class="box cds-box">
+    <ul class="works__performers">
+        <li class="works__performers--title">Mix, mastering, przygotowanie płyty CD:</li>
+        <li>
+            Mariusz Zaczkowski
         </li>
     </ul>
 </div>

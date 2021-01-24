@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-// import Logo from 'src/components/Logo';
+import Logo from 'src/components/Logo';
+import PlayMusic from 'src/components/PlayMusic';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
 import SocialNavigation from './SocialNavigation';
 
-export default function Navbar({ location }) {
+export default function Navbar({ location, toggleMusic, isMusicPlay }) {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = React.useState(false);
   const [language, setLanguage] = useState('pl');
@@ -32,12 +33,21 @@ export default function Navbar({ location }) {
           role='navigation'
           aria-label='main-navigation'
         >
-          {/* <Logo /> */}
-          <SocialNavigation />
-          <Hamburger
-            isOpen={isOpen}
-            setOpen={toggleHamburger}
-          />
+          <div className='flex-center'>
+            <Logo />
+            <PlayMusic
+              toggleMusic={toggleMusic}
+              isMusicPlay={isMusicPlay}
+            />
+          </div>
+
+          <div className='flex-center'>
+            <SocialNavigation />
+            <Hamburger
+              isOpen={isOpen}
+              setOpen={toggleHamburger}
+            />
+          </div>
         </nav>
       </div>
       <Menu
@@ -51,6 +61,12 @@ export default function Navbar({ location }) {
   );
 }
 
+Navbar.defaultProps = {
+  isMusicPlay: 'false',
+};
+
 Navbar.propTypes = {
   location: PropTypes.object.isRequired,
+  toggleMusic: PropTypes.func.isRequired,
+  isMusicPlay: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };

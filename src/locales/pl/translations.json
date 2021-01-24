@@ -75,5 +75,8 @@
   "composer": "kompozytorka",
   "pianist":  "pianistka",
   "conductor": "dyrygentka",
-  "details": "szczegóły"
+  "details": "szczegóły",
+  "star_with_music": "Czy chcesz włączyć muzykę?",
+  "yes": "Tak",
+  "no": "Nie"
 }

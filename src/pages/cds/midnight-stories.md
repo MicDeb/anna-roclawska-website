@@ -9,17 +9,22 @@ title: Midnight Stories 2020
     </div>
 </div>
 <div class="box cds-box">
-    Najnowszy album zawiera 12 utworów a cappella, inspirowanych tematyką nocy, stworzonych specjalnie dla Art’n’Voices przez polskich kompozytorów młodego pokolenia: 
-    Szymon Godziemba-Trytek, Kamil Cieślik, Michał Ziółkowski, Marek Raczyński, Michał Malec, Anna Rocławska-Musiałczyk, Zuzanna Falkowska, Jakub Szafrański oraz Paweł Łukaszewski (bonus track)
+    <ul class="works__performers">
+        <li><p class="mb-1">Najnowszy album zawiera 12 utworów a cappella, inspirowanych tematyką nocy, stworzonych specjalnie dla Art’n’Voices przez polskich kompozytorów młodego pokolenia:</p></li>
+        <li>Szymon Godziemba-Trytek</li>
+        <li>Kamil Cieślik</li>
+        <li>Michał Ziółkowski</li>
+        <li>Marek Raczyński</li>
+        <li>Michał Malec</li>
+        <li>Anna Rocławska-Musiałczyk</li>
+        <li>Zuzanna Falkowska</li>
+        <li>Jakub Szafrański</li>
+        <li>Paweł Łukaszewski (bonus track)</li>
+    </ul>
 </div>
 <div class="box cds-box">
-    Płyta wydana przez wytwórnię fonograficzną DUX.
-    Nie chcieliśmy wykonywać utworów już nagranych. Zależało nam na nowatorskich wizjach nocy, które moglibyśmy samodzielnie zinterpretować. Poprosiliśmy więc polskich kompozytorów najmłodszej generacji o nocne opowieści. Ich rozmaite interpretacje codziennego zjawiska, jakim jest nadejście zmroku, tylko utwierdziły nas w przekonaniu, jak fascynujące i wielowymiarowe może być postrzeganie nocy.  
-    Art’n’Voices
-</div>
-<div class="box cds-box">
-    Wykonawcy:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>
             Zespół Wokalny Art’n’Voices
         </li>
@@ -27,12 +32,12 @@ title: Midnight Stories 2020
 </div>
 
 <div class="box cds-box">
-    <ul>
-        <li>
-            Nagranie, miks, mastering – Jakub Garbacz i Przemysław Kunda Ars Sonora
+    <ul class="works__performers">
+        <li class="works__performers--title">
+            Nagranie, miks, mastering
         </li>
         <li>
-            Projekt okładki – Agnieszka „Jewka” Jewasińska
+            Jakub Garbacz i Przemysław Kunda Ars Sonora
         </li>
     </ul>
 </div>

@@ -4,11 +4,11 @@ path: /cds/koledy-europejskie
 title: Kolędy europejskie 2015
 ---
 <div class="box cds-box">
-    Wybrane kolędy europejskie w wykonaniu polskiej śpiewczki Anny Fabrello (sopran), w aranżacjach zamówionych specjalnie u gdańskich kompozytorów: Marka Czerniewicza, Kamila Cieślika, Dawida Kamińskiego, Piotra Jędrzejczyk oraz Anny Rocławskiej-Musiałczyk. Płyta z 11 kolędami z najpopularniejszymi kolędami polskimi (4), angielskimi (3), niemieckimi (2), holenderskimi (1) i jedną włoską kolędą. Wszystkie w oryginalnej wersji językowej.
+    Wybrane kolędy europejskie w wykonaniu polskiej śpiewaczki Anny Fabrello (sopran), w aranżacjach zamówionych specjalnie u gdańskich kompozytorów: Marka Czerniewicza, Kamila Cieślika, Dawida Kamińskiego, Piotra Jędrzejczyk oraz Anny Rocławskiej-Musiałczyk. Płyta z 11 kolędami z najpopularniejszymi kolędami polskimi (4), angielskimi (3), niemieckimi (2), holenderskimi (1) i jedną włoską kolędą. Wszystkie w oryginalnej wersji językowej.
 </div>
 <div class="box cds-box">
-    Wykonawcy:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>
             Anna Fabrello – sopran
         </li>
@@ -39,12 +39,12 @@ title: Kolędy europejskie 2015
     </ul>
 </div>
 <div class="box cds-box">
-    <ul>
-        <li>
-            Realizacja nagrania – Igor Budaj/Filip Feiner
+    <ul class="works__performers">
+        <li class="works__performers--title">
+            Realizacja nagrania
         </li>
         <li>
-            Nagrania zrealizowane w sali koncertowej Szkoły Muzycznej I i II st. w Gdyni
+            Igor Budaj/Filip Feiner
         </li>
     </ul>
 </div>

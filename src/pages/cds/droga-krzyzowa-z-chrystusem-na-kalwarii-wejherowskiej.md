@@ -10,43 +10,52 @@ title: Droga Krzyżowa. Z Chrystusem na Kalwarii Wejherowskiej 2013
 </div>
 <div class="box cds-box">
     Album fotograficzny oraz rozważania Drogi krzyżowej, inspirowanej Kalwarią Wejherowską, autorstwa Ks. Przemysława Augusta Lewińskiego, czyta: Jerzy Kiszkis
-    Muzyka: Anna Rocławska-Musiałczyk (1-4; 6-7; 9-14) i Julianna Danielewicz (5 i 8)
 </div>
 <div class="box cds-box">
-    Utwory muzyczne w wykonaniu Zespołu Wokalnego Art’n’Voices w składzie:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Muzyka:</li>
         <li>
-            soprany – Anna Potrykus, Małgorzata Rocławska (10,18,22)
+            Anna Rocławska-Musiałczyk (1-4; 6-7; 9-14)
         </li>
         <li>
-            alty – Anna Rocławska-Musiałczyk Julianna Danielewicz (8,16,20)
+            Julianna Danielewicz (5 i 8)
+        </li>
+    </ul>
+</div>
+<div class="box cds-box">
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
+        <li>
+            Zespołu Wokalnego Art’n’Voices:
         </li>
         <li>
-            tenory – Mateusz Warkusz (10,26),Patryk Mudlaw (22)
+            soprany – Anna Potrykus, Małgorzata Rocławska
         </li>
         <li>
-            basy – Tomasz Chyła, Maciej Lewandowski (6)
+            alty – Anna Rocławska-Musiałczyk Julianna Danielewicz
         </li>
         <li>
-            gościnnie w zespole – Joanna Lachowska-Janek (18)  i Anna Miotk
+            tenory – Mateusz Warkusz (10,26),Patryk Mudlaw
         </li>
         <li>
-            gościnnie solo – Angelika Weichbrodt (14)
+            basy – Tomasz Chyła, Maciej Lewandowski
+        </li>
+        <li>
+            gościnnie w zespole – Joanna Lachowska-Janek i Anna Miotk
+        </li>
+        <li>
+            gościnnie solo – Angelika Weichbrodt
         </li>
     </ul>
 </div>
 
 <div class="box cds-box">
-    Nagranie, realizacja dźwięku i mastering
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Nagranie, realizacja dźwięku i mastering</li>
         <li>
             Tadeusz Korthals – North Studio
         </li>
     </ul>
-</div>
-
-<div class="box cds-box">
-    Nagrań dokonano w dniach 21-25.06.2012 r. w kościele pw. św. Leona Wielkiego w Wejherowie oraz Studio North w Połczynie.
 </div>
 
 <div class="box cds-box">

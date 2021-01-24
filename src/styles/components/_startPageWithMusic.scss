@@ -1,0 +1,40 @@
+.start-music {
+  &-container {
+    @include page-container;
+    background-color: $black;
+  }
+
+  &-text {
+    animation: textAnimate 6s linear 1;
+    opacity: 1;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 40px;
+      border: 1px solid $light-brown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+      margin: 0 1rem;
+    }
+  }
+}
+
+
+@keyframes textAnimate {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

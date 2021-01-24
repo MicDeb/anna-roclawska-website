@@ -12,8 +12,8 @@ title: Art’n’Voices live in Provence 2019
     Nagranie koncertu podczas tournée w ramach „Festival des Chœurs Lauréats” we Francji, na który zapraszane są najlepsze chóry i zespoły wokalne z całego świata. Na płycie znajduje się program złożony z utworów a cappella od renesansu po muzykę współczesną, zarejestrowany podczas koncertu w katedrze w Vaison la Romaine w lipcu 2018 r. Płyta została wydana rok później.
 </div>
 <div class="box cds-box">
-    Wykonawcy:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>
             Zespół Wokalny Art’n’Voices
         </li>

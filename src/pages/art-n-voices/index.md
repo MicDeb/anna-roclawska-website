@@ -17,7 +17,9 @@ title: art_n_voices
     Art’n’Voices był wielokrotnie nagradzany w konkursach o randze ogólnopolskiej i międzynarodowej. W swoim dorobku posiada aż dziesięć nagród Grand Prix m.in. 11. Międzynarodowego Festiwalu Chóralnego „Mundus Cantat” w Sopocie (2015 r.) czy Ogólnopolskiego Festiwalu Współczesnej Muzyki Chóralnej „Music Everywhere” (Gdańsk 2014). Zespół odniósł sukces w dwóch prestiżowych konkursach należących do Europejskiego Grand Prix Chóralistyki: „Polifonico Guido di Arezzo” we Włoszech (2017 r.) i „Tolosako Abesbatza Lehiaketa” w Hiszpanii (2019 r.), na którym zdobył dwie I nagrody.
 </p>
 <div class="separator m-3"></div>
+
 ![Anna Rocławska-Musiałczyk](/img/art-n-voices-2.jpg "Art’n’Voices")
+
 <div class="separator m-3"></div>
 <p class="box bio__box">
     Dotychczas Art’n’Voices wydał trzy autorskie albumy, debiutancki: „Droga krzyżowa. Z Chrystusem na Kalwarii Wejherowskiej” (2013 r.), na którym znalazły się kompozycje autorstwa liderki zespołu – Anny Rocławskiej-Musiałczyk, „Art’n’Voices Live in Provance” (2019 r.) – będący nagraniem jednego z koncertów podczas tournée w ramach wysokiej rangi „Festival des Chœurs Lauréats” we Francji, na który zapraszane są najlepsze chóry i zespoły wokalne z całego świata. Trzecią najświeższą płytą Zespołu jest „Midnight Stories” wydaną przez DUX z muzyką współczesnych polskich kompozytorów młodego pokolenia, której wspólnym mianownikiem jest tematyka nocy, mary i snu.

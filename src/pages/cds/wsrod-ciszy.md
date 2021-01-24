@@ -12,8 +12,8 @@ title: Wśród ciszy 2020
     Najpiękniejsze polskie kolędy i pastorałki na chór, sopran solo, orkiestrę smyczkową, obój i fortepian w aranżacji Anny Rocławskiej-Musiałczyk.
 </div>
 <div class="box cds-box">
-    Wykonawcy:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>
             Chór Gdańskiego Uniwersytetu Medycznego
         </li>
@@ -36,9 +36,10 @@ title: Wśród ciszy 2020
 </div>
 
 <div class="box cds-box">
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Realizacja, edycja i mastering nagrań:</li>
         <li>
-            Realizacja, edycja i mastering nagrań: Studio MTS Mariusz Zaczkowski / studiomts.pl
+            Studio MTS Mariusz Zaczkowski / studiomts.pl
         </li>
     </ul>
 </div>

@@ -9,11 +9,11 @@ title: W céni Bożëch skrzidłów – psalmy 2018
     </div>
 </div>
 <div class="box cds-box">
-    Dzięki staraniom Stowarzyszenia DISCANTUS w Gowidlinie, nakładem wydawnictwa muzycznego ARS Sonora ukazała się płyta zatytułowana – W céni Bożëch skrzidłów – psalmy. Publikacja zawiera nowe religijne utwory młodych pomorskich kompozytorów – Anny Rocławskiej-Musiałczyk i Adama Diesnera. Warstwę tekstową kompozycji stanowią wybrane psalmy z Księgi Psalmów Starego Testamentu w przekładzie z języka hebrajskiego na kaszubski o. Adama Ryszarda Sikory OFM.
+    Dzięki staraniom Stowarzyszenia DISCANTUS w Gowidlinie, nakładem wydawnictwa muzycznego ARS Sonora ukazała się płyta zatytułowana – <i>W céni Bożëch skrzidłów – psalmy</i>. Publikacja zawiera nowe religijne utwory młodych pomorskich kompozytorów – Anny Rocławskiej-Musiałczyk i Adama Diesnera. Warstwę tekstową kompozycji stanowią wybrane psalmy z Księgi Psalmów Starego Testamentu w przekładzie z języka hebrajskiego na kaszubski o. Adama Ryszarda Sikory OFM.
 </div>
 <div class="box cds-box">
-    Wykonawcy:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>
             Marzena Michałowska – sopran
         </li>
@@ -30,9 +30,10 @@ title: W céni Bożëch skrzidłów – psalmy 2018
 </div>
 
 <div class="box cds-box">
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Nagranie, miks, mastering:</li>
         <li>
-            Nagranie, miks, mastering – Jakub Garbacz Ars Sonora
+            Jakub Garbacz Ars Sonora
         </li>
     </ul>
 </div>

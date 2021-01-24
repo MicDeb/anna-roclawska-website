@@ -1,23 +1,61 @@
 import '../styles/all.scss';
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
-import trim from 'lodash/trim';
+import { Spring } from 'react-spring/renderprops';
 // import Footer from './Footer';
-import Navbar from './navigation/Navbar';
 // import SocialNavigation from './navigation/SocialNavigation';
+import BibiMusic from 'src/img/Bibi.mp3';
+import trim from 'lodash/trim';
+import Navbar from './navigation/Navbar';
 import useSiteMetadata from './SiteMetadata';
+import StartPageWithMusic from './StartPageWithMusic';
 import { withTrans } from '../i18n/withTrans';
 
 const TemplateWrapper = ({
   children, uri, location,
 }) => {
+  const [music] = useState(new Audio(BibiMusic));
   const { title, description } = useSiteMetadata();
   const [mainClass, setMainClass] = useState('');
+  const [startWithMusic, setStartWithMusic] = useState(sessionStorage.getItem('startPageWithMusic'));
+  const [isLocationChange, setIsLocationChange] = useState(false);
+
+  const locationChange = useCallback(async () => {
+    await setIsLocationChange(true);
+    setIsLocationChange(false);
+  }, []);
+
   useEffect(() => {
     setMainClass(uri === '/' ? 'home' : trim(uri, '/'));
   }, [uri]);
+
+  useEffect(() => {
+    if (startWithMusic === 'true') {
+      music.play();
+    } else {
+      music.pause();
+    }
+
+    return () => {
+      sessionStorage.setItem('startPageWithMusic', 'false');
+    };
+  }, [music, startWithMusic]);
+
+  useEffect(() => {
+    if (music && startWithMusic === 'true') {
+      music.onended = () => setStartWithMusic('false');
+    }
+  }, [music, startWithMusic]);
+
+  useEffect(() => {
+    locationChange();
+  }, [location, locationChange]);
+
+  const togglePlayMusic = useCallback(() => {
+    setStartWithMusic((prevState) => (prevState === 'true' ? 'false' : 'true'));
+  }, []);
 
   return (
     <div>
@@ -74,15 +112,41 @@ const TemplateWrapper = ({
           content={`${ withPrefix('/') }img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar location={location} />
-      <main
-        id='main-container'
-        className={mainClass}
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        config={{ mass: 1, tension: 500, friction: 1200 }}
+        reset={isLocationChange}
       >
-        {children}
-      </main>
-      {/* <SocialNavigation /> */}
-      {/* <Footer /> */}
+        {(props) => (
+          <div style={props}>
+            {!startWithMusic ? (
+              <StartPageWithMusic
+                setStartWithMusic={(value) => {
+                  locationChange();
+                  setStartWithMusic(value);
+                }}
+              />
+            ) : (
+              <>
+                <Navbar
+                  location={location}
+                  isMusicPlay={startWithMusic}
+                  toggleMusic={togglePlayMusic}
+                />
+                <main
+                  id='main-container'
+                  className={mainClass}
+                >
+                  {children}
+                </main>
+                {/* <SocialNavigation /> */}
+                {/* <Footer /> */}
+              </>
+            )}
+          </div>
+        )}
+      </Spring>
     </div>
   );
 };

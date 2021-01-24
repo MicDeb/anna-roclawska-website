@@ -21,8 +21,21 @@
     }
 
     li:not(:first-child) {
-      margin-left: $gap;
-      margin-bottom: $gap * 0.4;;
+      margin-left: $gap * 2;
+      margin-bottom: $gap * 0.4;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 6px;
+        height: 2px;
+        background-color: #96907E;
+        display: block;
+        position: absolute;
+        left: -14px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 

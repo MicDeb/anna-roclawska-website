@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 export default function Recommendations() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 2000,
     slidesToShow: 1,
@@ -14,6 +14,7 @@ export default function Recommendations() {
     draggable: true,
     fade: true,
     pauseOnHover: true,
+    dotsClass: 'slick-dots recommendations__custom-dots',
   };
   return (
     <div className='recommendations'>

@@ -12,8 +12,8 @@ title: Piosenki na depresję 2020
     Album "Piosenki na depresję"  składa się z 13 (nie bez powodu) utworów autorstwa Jeremiego Przybory i Jerzego Wasowskiego oraz dwóch bonusów (innych autorów). Aranżacje utworów na fortepian – Anna Rocławska-Musiałczyk
 </div>
 <div class="box cds-box">
-    Wykonawcy:
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Wykonawcy:</li>
         <li>
             Piotr Kosewski – śpiew
         </li>
@@ -24,12 +24,10 @@ title: Piosenki na depresję 2020
 </div>
 
 <div class="box cds-box">
-    <ul>
+    <ul class="works__performers">
+        <li class="works__performers--title">Nagranie, miks, mastering:</li>
         <li>
-            Nagranie, miks, mastering – Marcin Kowalczyk
-        </li>
-        <li>
-            Projekt okładki – paplaLala
+            Marcin Kowalczyk
         </li>
     </ul>
 </div>
