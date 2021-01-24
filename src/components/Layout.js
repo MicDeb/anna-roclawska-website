@@ -21,12 +21,16 @@ const TemplateWrapper = ({
   const music = useRef({ current: null });
   const { title, description } = useSiteMetadata();
   const [mainClass, setMainClass] = useState('');
-  const [startWithMusic, setStartWithMusic] = useState(sessionStorage.getItem('startPageWithMusic'));
+  const [startWithMusic, setStartWithMusic] = useState(null);
   const [isLocationChange, setIsLocationChange] = useState(false);
 
   const locationChange = useCallback(async () => {
     await setIsLocationChange(true);
     setIsLocationChange(false);
+  }, []);
+
+  useEffect(() => {
+    setStartWithMusic(sessionStorage.getItem('startPageWithMusic'));
   }, []);
 
   useEffect(() => {
