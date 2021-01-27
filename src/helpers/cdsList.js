@@ -37,7 +37,7 @@ export const cdsList = [
   },
   {
     path: '/cds/art-n-voices-live-in-provence',
-    title: 'Art’n’Voices  live in Provence',
+    title: 'Art’n’Voices live in Provence',
     img: ArtNVoicesLiveInProvence,
   },
   {

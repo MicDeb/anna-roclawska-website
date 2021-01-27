@@ -60,14 +60,12 @@ export default function Recommendations() {
         </div>
         <div className='recommendations__box'>
           <p className='recommendations__box--description'>
-            Niejednokrotnie, uczestnicząc w koncertach, podczas których prezentowano
-            dorobek twórczy kompozytorki, mogłem śledzić
-            ożywione reakcje publiczności na jej muzykę.
-            Reakcje te skądinąd nigdy mnie nie dziwiły, bowiem kompozycje A. Rocławskiej-Musiałczyk
-            są frapujące, pełne intensywnych przeżyć oraz głębokich refleksji,
-            jednocześnie odznaczają się znakomitą konstrukcją. Wyrazy uznania dla tej
-            twórczości płyną zresztą nie tylko ze strony melomanów, lecz także gremiów jurorskich
-            licznych konkursów kompozytorskich zarówno w kraju, jak i poza jego granicami.
+            Kompozycje Anny Rocławskiej-Musiałczyk są frapujące,
+            pełne intensywnych przeżyć oraz głębokich refleksji,
+            jednocześnie odznaczają się znakomitą konstrukcją.
+            Wyrazy uznania dla tej twórczości płyną zresztą nie tylko ze strony melomanów,
+            lecz także gremiów jurorskich licznych konkursów kompozytorskich
+            zarówno w kraju, jak i poza jego granicami.
           </p>
 
           <p className='recommendations__box--author'>
