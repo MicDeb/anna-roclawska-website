@@ -94,14 +94,14 @@ export const transatlantykPhotos = {
     {
       src: Transatlantyk1,
       alt: 'Anna Rocławska-Musiałczyk Transatlantyk',
-      height: 400,
+      height: 600,
       caption: 'Fot. Marcin Stępień',
       sizes: { xs: 12, md: 6 },
     },
     {
       src: Transatlantyk2,
       alt: 'Anna Rocławska-Musiałczyk Transatlantyk',
-      height: 400,
+      height: 600,
       caption: 'Fot. Marcin Stępień',
       sizes: { xs: 6, md: 6 },
     },
@@ -184,7 +184,7 @@ export const artNVoice = {
 };
 
 export const nearPiano = {
-  title: '',
+  title: 'Przy fortepianie',
   photos: [
     {
       src: NearPiano1,

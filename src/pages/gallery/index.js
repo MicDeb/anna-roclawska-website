@@ -20,6 +20,22 @@ import {
 
 export default function Gallery() {
   const { t } = useTranslation();
+
+  const photosCatalog = [
+    { images: transatlantykPhotos.photos, title: transatlantykPhotos.title },
+    { images: japkWorkshop.photos, title: japkWorkshop.title },
+    { images: artNVoice.photos, title: artNVoice.title },
+    { images: nearPiano.photos, title: nearPiano.title },
+    { images: mlynarski.photos, title: mlynarski.title },
+    { images: piosenkaAktorska.photos, title: piosenkaAktorska.title },
+    { images: kohelet.photos, title: kohelet.title },
+    { images: pncm.photos, title: pncm.title },
+    { images: midnightStories.photos, title: midnightStories.title },
+    { images: trzyMarie.photos, title: trzyMarie.title },
+    { images: muzykaChoralna.photos, title: muzykaChoralna.title },
+    { images: differentPhotos.photos, title: differentPhotos.title },
+  ];
+
   return (
     <section className='section'>
       <Helmet title={`Anna Rocławska - Musiałczyk | ${ t('navigation.gallery') }`} />
@@ -28,54 +44,21 @@ export default function Gallery() {
           {t('navigation.gallery')}
         </h2>
         <Separator margin={3} />
-        <SingleShowPhotos
-          images={transatlantykPhotos.photos}
-          title={transatlantykPhotos.title}
-        />
-        <SingleShowPhotos
-          images={japkWorkshop.photos}
-          title={japkWorkshop.title}
-        />
-        <SingleShowPhotos
-          images={artNVoice.photos}
-          title={artNVoice.title}
-        />
-        <SingleShowPhotos
-          images={nearPiano.photos}
-          title={nearPiano.title}
-        />
-        <SingleShowPhotos
-          images={mlynarski.photos}
-          title={mlynarski.title}
-        />
-        <SingleShowPhotos
-          images={piosenkaAktorska.photos}
-          title={piosenkaAktorska.title}
-        />
-        <SingleShowPhotos
-          images={kohelet.photos}
-          title={kohelet.title}
-        />
-        <SingleShowPhotos
-          images={pncm.photos}
-          title={pncm.title}
-        />
-        <SingleShowPhotos
-          images={midnightStories.photos}
-          title={midnightStories.title}
-        />
-        <SingleShowPhotos
-          images={trzyMarie.photos}
-          title={trzyMarie.title}
-        />
-        <SingleShowPhotos
-          images={muzykaChoralna.photos}
-          title={muzykaChoralna.title}
-        />
-        <SingleShowPhotos
-          images={differentPhotos.photos}
-          title={differentPhotos.title}
-        />
+        <div className='wrapper container'>
+          <div className='row'>
+            {photosCatalog.map((catalog) => (
+              <div
+                key={catalog.title}
+                className='col-xs-12 col-lg-12'
+              >
+                <SingleShowPhotos
+                  images={catalog.images}
+                  title={catalog.title}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -3,8 +3,16 @@
     @include page-container;
     background-image: url('../img/main/anna-roclawska-musialczyk005.jpg');
 
-    &:before {
-      @include page-container-before;
+    .contact-photo {
+      display: none;
+    }
+
+    @include respond-to($desktop) {
+      background-image: none;
+
+      .contact-photo {
+        display: block;
+      }
     }
   }
 

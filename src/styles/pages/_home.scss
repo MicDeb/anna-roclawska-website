@@ -1,44 +1,142 @@
-.home-page {
-  &-container {
-    @include page-container;
-    background-image: url('../img/main/anna-roclawska-musialczyk011.jpg');
-
-
-    &:before {
-      @include page-container-before;
-    }
-
-    .professions {
-      height: 30px;
-    }
+.home {
+  @include respond-to($desktop) {
+    //margin-top: 10rem;
   }
 
-  &__title,
-  &__subtitle {
-    color: $light-grey;
-    z-index: 3;
-    font-family: 'Bilbo Swash Caps', sans-serif;
+  &-page {
+    &-container {
+      @include page-container;
+      background-image: url('../img/main/anna-roclawska-musialczyk011.jpg');
+      position: relative;
 
-    * {
+      @include respond-to($desktop) {
+        @include page-container-desktop;
+      }
+
+
+      &:before {
+        @include page-container-before;
+      }
+
+      .professions {
+        height: 30px;
+
+        @include respond-to($desktop) {
+          width: 100%;
+          min-height: 40px;
+          height: 40px;
+        }
+      }
+
+      .trails-main {
+        @include respond-to($desktop) {
+          width: 100%;
+        }
+      }
+    }
+
+    &-title-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__title,
+    &__subtitle {
+      color: $light-grey;
+      z-index: 3;
       font-family: 'Bilbo Swash Caps', sans-serif;
+
+      * {
+        font-family: 'Bilbo Swash Caps', sans-serif;
+      }
+
+      &--name {
+        font-size: 9rem;
+        line-height: .8;
+        @include respond-to($desktop) {
+          font-size: 7rem;
+          line-height: 1;
+        }
+      }
+
+      &--surname {
+        font-size: 2.6rem;
+        @include respond-to($desktop) {
+          font-size: 7rem;
+          line-height: 1;
+          margin-left: 2rem;
+        }
+      }
     }
 
-    &--name {
-      font-size: 9rem;
-      line-height: .8;
+    &__title {
+      @include page-title;
+
+      @include respond-to($desktop) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
-    &--surname {
-      font-size: 2.6rem;
+    &__subtitle {
+      font-size: $font-size-xxl;
+      letter-spacing: .7rem;
     }
-  }
 
-  &__title {
-    @include page-title;
-  }
+    &__desktop-photos {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 33.3vw 33.3vw auto;
+      grid-template-rows: 33.3vh 33.3vh 33.3vh;
+      column-gap: $gap;
+      row-gap: $gap;
+      justify-items: stretch;
+      align-items: stretch;
+      justify-content: stretch;
 
-  &__subtitle {
-    font-size: $font-size-xxl;
-    letter-spacing: .7rem;
+      &--photo {
+        overflow: hidden;
+        img {
+          //display: none;
+          height: auto;
+          width: 100%;
+          object-fit: cover;
+        }
+        &-first {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        &-second {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        &-third {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+        &-fourth {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 4;
+        }
+        &-fifth {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 3;
+          grid-row-end: 4;
+        }
+      }
+    }
   }
 }

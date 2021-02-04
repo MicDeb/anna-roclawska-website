@@ -7,7 +7,6 @@ import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
 import { Spring } from 'react-spring/renderprops';
 // import Footer from './Footer';
-// import SocialNavigation from './navigation/SocialNavigation';
 import BibiMusic from 'src/img/Bibi.mp3';
 import trim from 'lodash/trim';
 import Navbar from './navigation/Navbar';
@@ -94,13 +93,22 @@ const TemplateWrapper = ({
         />
 
         <link
-          rel='mask-icon'
-          href={`${ withPrefix('/') }img/safari-pinned-tab.svg`}
-          color='#ff4400'
+          rel='icon'
+          type='image/png'
+          sizes='192x192'
+          href={`${ withPrefix('/') }img/android-chrome-192x192.png`}
         />
+
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='512x512'
+          href={`${ withPrefix('/') }img/android-chrome-512x512.png`}
+        />
+
         <meta
           name='theme-color'
-          content='#fff'
+          content='#000000'
         />
 
         <meta
@@ -117,7 +125,7 @@ const TemplateWrapper = ({
         />
         <meta
           property='og:image'
-          content={`${ withPrefix('/') }img/og-image.jpg`}
+          content={`${ withPrefix('/') }img/og-image.png`}
         />
       </Helmet>
       <audio
@@ -126,6 +134,7 @@ const TemplateWrapper = ({
         type='audio/mpeg'
         ref={music}
         className='main-audio-player'
+        loop
       >
         <track kind='captions' />
       </audio>
@@ -136,7 +145,9 @@ const TemplateWrapper = ({
         reset={isLocationChange}
       >
         {(props) => (
-          <div style={props}>
+          <div
+            style={props}
+          >
             {!startWithMusic ? (
               <StartPageWithMusic
                 setStartWithMusic={(value) => {
@@ -157,7 +168,6 @@ const TemplateWrapper = ({
                 >
                   {children}
                 </main>
-                {/* <SocialNavigation /> */}
                 {/* <Footer /> */}
               </>
             )}

@@ -66,7 +66,7 @@ export const navigationItems = Object.freeze([
 
 export const socialNavigationItems = Object.freeze([
   {
-    location: 'https://www.m.facebook.com/Anna-Roc%C5%82awska-Musia%C5%82czyk_composer-103422315059712/',
+    location: 'https://www.facebook.com/Anna-Roc%C5%82awska-Musia%C5%82czyk_composer-103422315059712',
     name: 'facebook',
     icon: facebook,
     alt: 'Facebook icon',

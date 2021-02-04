@@ -15,28 +15,37 @@ export default function Cds() {
           {t('navigation.cds')}
         </h2>
         <Separator margin={3} />
-        {cdsList.map((cd, index) => (
-          <Fragment key={cd.title}>
-            <div
-              className='box cds-box'
-            >
-              <p className='cds-box__title'>{cd.title}</p>
-              <Link to={cd.path}>
-                <img
-                  src={cd.img}
-                  alt={cd.title}
-                />
-                <div className='cds-box__details'>
-                  <span>{t('details')}</span>
+        <div className='wrapper container'>
+          <div className='row'>
+            {cdsList.map((cd, index) => (
+              <Fragment key={cd.title}>
+                <div className='col-xs-12 col-md-6 col-lg-4'>
+                  <div
+                    className='box cds-box'
+                  >
+                    <p className='cds-box__title'>{cd.title}</p>
+                    <Link to={cd.path}>
+                      <img
+                        src={cd.img}
+                        alt={cd.title}
+                      />
+                      <div className='cds-box__details'>
+                        <p>
+                          {t('details')}
+                          {' '}
+                          <span className='icon-details' />
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                  {index < (cdsList.length - 1) && (
+                    <Separator margin={3} />
+                  )}
                 </div>
-              </Link>
-            </div>
-            {index < (cdsList.length - 1) && (
-              <Separator margin={3} />
-            )}
-          </Fragment>
-
-        ))}
+              </Fragment>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

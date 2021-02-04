@@ -1,6 +1,12 @@
 .recommendations {
   width: auto;
   margin: $gap * 4 $gap;
+  cursor: pointer;
+
+  @include respond-to($desktop) {
+    max-width: 40rem;
+    margin: $gap * 4 auto;
+  }
 
   &__box {
     padding: $gap;

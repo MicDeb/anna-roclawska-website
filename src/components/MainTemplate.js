@@ -14,7 +14,7 @@ export const MainTemplate = ({
   return (
     <section>
       <Helmet title={`Anna Rocławska - Musiałczyk | ${ t(helmetTitle) }`} />
-      <div>
+      <div className='wrapper container'>
         <h2 className='page__main-title'>
           {t(title)}
         </h2>
