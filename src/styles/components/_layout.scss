@@ -1,12 +1,24 @@
 #main-container:not(.home):not(.contact) {
   margin: $main-gap $gap $gap * 3;
 
+  @include respond-to($desktop) {
+    margin: 11rem 0 $gap * 3;
+  }
+
   .page {
     &__main-title {
       font-size: $font-size-xxl;
       margin: 0 0 $gap * 2 0;
       position: relative;
       text-align: center;
+      text-transform: uppercase;
+      font-weight: $font-weight-regular;
+
+      @include respond-to($desktop) {
+        width: 600px;
+        margin: auto;
+        font-size: $font-size * 2.3;
+      }
     }
 
     &__subtitle {

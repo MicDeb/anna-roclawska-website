@@ -11,8 +11,6 @@ export default function GridGallery({ data, openLightbox }) {
   const [bind, { width }] = useMeasure();
   // Hook3: Hold items
   const [items] = useState(data);
-  // eslint-disable-next-line no-console
-  console.log('items', items);
   // Hook5: Form a grid of stacked items using width & columns we got from hooks 1 & 2
   const [heights, gridItems] = useMemo(() => {
     // eslint-disable-next-line no-shadow
@@ -25,10 +23,14 @@ export default function GridGallery({ data, openLightbox }) {
       // Y = it's just the height of the current column
       const xy = [
         (width / columns) * column,
-        (heights[column] += child.height / 2) - child.height / 2,
+        (heights[column] += (columns === 3 ? child.sizes.md : child.sizes.xs) / 2)
+        - (columns === 3 ? child.sizes.md : child.sizes.xs) / 2,
       ];
       return {
-        ...child, xy, width: width / columns, height: child.height / 2,
+        ...child,
+        xy,
+        width: width / columns,
+        height: (columns === 3 ? child.sizes.md : child.sizes.xs) / 2,
       };
     });
     return [heights, gridItems];
@@ -65,6 +67,7 @@ export default function GridGallery({ data, openLightbox }) {
           <div
             style={{ backgroundImage: `url(${ item.src })` }}
             onClick={() => openLightbox(index)}
+            className='gallery-photo-container'
           />
         </a.div>
       ))}

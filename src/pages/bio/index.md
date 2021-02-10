@@ -25,9 +25,9 @@ title: bio
 </div>
 </div>
 
-<div class="row">
+<div class="row middle-xs reverse">
 
-<div class="col-xs-12 col-md-6 bio-photo-container">
+<div class="col-xs-12 col-md-6">
 
 ![Anna Rocławska-Musiałczyk](/img/anna-roclawska-musialczyk003.jpg "Anna Rocławska-Musiałczyk")
 
@@ -35,7 +35,7 @@ title: bio
 
 <div class="col-xs-12 col-md-6">
 
-<div class="separator"></div>
+<div class="separator hide-md"></div>
 <p class="box bio__box">
 Swoje twórcze zainteresowania Rocławska-Musiałczyk kieruje w stronę muzyki chóralnej, solowej i kameralnej, chętnie inspirując się źródłami muzyki ludowej, w szczególności kaszubskiej. W grudniu 2018 roku został prawykonany jej utwór oratoryjny przeznaczony na nowatorski aparat wykonawczy „Osiem Pieśni z Księgi Koheleta na recytatora, głosy solowe, instrumenty ludowe, grupę perkusyjną, chór i orkiestrę”.
 </p>
@@ -51,14 +51,17 @@ Anna Rocławska-Musiałczyk uczestniczyła w wielu kursach mistrzowskich z zakre
 
 </div>
 
-<div class="col-xs-12 col-md-6 bio-photo-container bio-photo-container--top-15 ">
+</div>
+
+<div class="row middle-xs">
+<div class="col-xs-12 col-md-6">
 
 ![Anna Rocławska-Musiałczyk](/img/anna-roclawska-musialczyk019.jpg "Anna Rocławska-Musiałczyk")
 
 </div>
 
 <div class="col-xs-12 col-md-6">
-<div class="separator"></div>
+<div class="separator hide-md"></div>
 <p class="box bio__box">
 Współtworzy i jest zarazem członkinią Zespołu Wokalnego Art’n’Voices, z którym zdobyła szereg nagród na konkursach i festiwalach w Polsce i w Europie (m.in. 10 nagród Grand Prix) oraz dokonała nagrań płyt m. in.: „Droga Krzyżowa. Z Chrystusem na Kalwarii Wejherowskiej” oraz  wspomniana płyta „Midnight Stories” - Contemporary Music of Polish Composers (DUX). Wraz z Art’n’Voices Anna Rocławska-Musiałczyk koncertuje w Polsce i w Europie m.in.: tournée w ramach wysokiej rangi „Festival des Chœurs Lauréats” we Francji, na który zapraszane są najlepsze chóry i zespoły wokalne z całego świata.
 </p>

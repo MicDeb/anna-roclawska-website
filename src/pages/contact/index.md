@@ -11,8 +11,7 @@ title: CONTACT
         </div>
         <div class="col-xs-12 col-md-6">
             <p class="contact__email">a-roclawska@wp.pl</p>
-            <p class="contact__phone">507 150 554</p>
-            <div class="separator"></div>
+            <p class="contact__phone">+48 507 150 554</p>
         </div>
     </div>
 </div>

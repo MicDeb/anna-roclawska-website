@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Slider from 'react-slick';
 
 export default function Recommendations() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: false,
-    autoplaySpeed: 10000,
-    draggable: true,
-    fade: true,
-    pauseOnHover: true,
-    dotsClass: 'slick-dots recommendations__custom-dots',
-  };
+  const settings = useMemo(() => (
+    {
+      dots: true,
+      infinite: true,
+      speed: 2000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      draggable: true,
+      fade: true,
+      pauseOnHover: true,
+      dotsClass: 'slick-dots recommendations__custom-dots',
+    }
+  ), []);
+
   return (
     <div className='recommendations'>
       <Slider {...settings}>

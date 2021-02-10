@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
 import { Spring } from 'react-spring/renderprops';
-// import Footer from './Footer';
 import BibiMusic from 'src/img/Bibi.mp3';
 import trim from 'lodash/trim';
+import Footer from './Footer';
 import Navbar from './navigation/Navbar';
 import useSiteMetadata from './SiteMetadata';
 import StartPageWithMusic from './StartPageWithMusic';
@@ -141,7 +141,7 @@ const TemplateWrapper = ({
       <Spring
         from={{ opacity: 0 }}
         to={{ opacity: 1 }}
-        config={{ mass: 1, tension: 500, friction: 1200 }}
+        config={{ tension: 40, friction: 20 }}
         reset={isLocationChange}
       >
         {(props) => (
@@ -168,7 +168,7 @@ const TemplateWrapper = ({
                 >
                   {children}
                 </main>
-                {/* <Footer /> */}
+                <Footer />
               </>
             )}
           </div>

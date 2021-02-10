@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import PauseIcon from 'src/img/pause-icon.png';
-import PlayIcon from 'src/img/play-icon.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
 export default function PlayMusic({ toggleMusic, isMusicPlay }) {
   const [playMusic, setPlayMusic] = useState(isMusicPlay);
@@ -21,10 +21,7 @@ export default function PlayMusic({ toggleMusic, isMusicPlay }) {
       className='play-music'
       onClick={togglePlayMusic}
     >
-      <img
-        src={playMusic === 'true' ? PauseIcon : PlayIcon}
-        alt='music-icon'
-      />
+      <FontAwesomeIcon icon={playMusic === 'true' ? faPause : faPlay} />
     </button>
   );
 }

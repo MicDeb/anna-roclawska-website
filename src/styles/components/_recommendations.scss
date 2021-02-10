@@ -5,7 +5,7 @@
 
   @include respond-to($desktop) {
     max-width: 40rem;
-    margin: $gap * 4 auto;
+    margin: $gap * 7 auto;
   }
 
   &__box {
@@ -25,15 +25,15 @@
     &:before {
       top: 0;
       left: 0;
-      border-top: 1px solid;
-      border-left: 1px solid;
+      border-top: 1px solid $border-color;
+      border-left: 1px solid $border-color;
     }
 
     &:after {
       bottom: 0;
       right: 0;
-      border-bottom: 1px solid;
-      border-right: 1px solid;
+      border-bottom: 1px solid $border-color;
+      border-right: 1px solid $border-color;
     }
 
     &--description {
@@ -44,7 +44,7 @@
         content: "";
         width: 90%;
         height: 1px;
-        background-image: linear-gradient(to right, transparent, $light-brown, transparent);
+        background-color: $border-color;
         display: block;
         margin-top: $gap;
       }
@@ -58,10 +58,10 @@
   }
 
   .slick-dots li button:before {
-    color: $white;
+    color: $light-brown;
   }
 
   .slick-dots li.slick-active button:before {
-    color: $light-brown;
+    color: $brown;
   }
 }

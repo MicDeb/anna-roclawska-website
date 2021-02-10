@@ -13,8 +13,8 @@ const initialChildMenuState = {
 };
 
 export default function Menu({
-  handleLanguageChange,
-  language,
+  // handleLanguageChange,
+  // language,
   isOpen,
   closeMenu,
   location,
@@ -69,7 +69,7 @@ export default function Menu({
                   <img
                     src={arrowIcon}
                     alt='Arrow icon'
-                    className={`icon filter-white ${ isChildMenuOpen[item.name] ? 'icon--active' : '' }`}
+                    className={`icon ${ isChildMenuOpen[item.name] ? 'icon--active' : '' }`}
                   />
                 </p>
               )}
@@ -96,23 +96,23 @@ export default function Menu({
         ))}
       </ul>
 
-      <div className='navbar__menu--language'>
-        <select
-          onChange={handleLanguageChange}
-          value={language}
-        >
-          <option value='pl'>PL</option>
-          <option value='en'>EN</option>
-        </select>
-      </div>
+      {/* <div className='navbar__menu--language'> */}
+      {/*  <select */}
+      {/*    onChange={handleLanguageChange} */}
+      {/*    value={language} */}
+      {/*  > */}
+      {/*    <option value='pl'>PL</option> */}
+      {/*    <option value='en'>EN</option> */}
+      {/*  </select> */}
+      {/* </div> */}
     </div>
   );
 }
 
 Menu.propTypes = {
   closeMenu: PropTypes.func.isRequired,
-  handleLanguageChange: PropTypes.func.isRequired,
+  // handleLanguageChange: PropTypes.func.isRequired,
   isOpen: PropTypes.bool.isRequired,
-  language: PropTypes.string.isRequired,
+  // language: PropTypes.string.isRequired,
   location: PropTypes.object.isRequired,
 };

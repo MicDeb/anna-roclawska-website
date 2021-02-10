@@ -1,7 +1,18 @@
+@mixin navItemLine {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: $border-color;
+  animation: scaleAnimate .3s linear 1;
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
 .navigation {
   position: fixed;
   top: 0;
-  //background: $black;
   z-index: 100;
   border-bottom: 1px solid transparent;
   width: 100%;
@@ -12,11 +23,19 @@
   justify-content: center;
   height: $navigation-height-sm;
 
+  @include respond-to($xl-desktop) {
+    padding: 0 4rem;
+  }
+
   .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond-to($xl-desktop) {
+      margin-top: 3.5rem;
+    }
 
     &__hamburger {
       display: flex;
@@ -38,7 +57,7 @@
       div {
         width: 2rem;
         height: 2px;
-        background: $light-grey;
+        background: $font-color;
         transition: all 0.3s linear;
         position: relative;
         transform-origin: 1px;
@@ -87,19 +106,24 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: $black;
+  background: $light-grey;
   min-height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  overflow-y: scroll;
+  transition: transform 0.3s linear;
+  overflow: auto;
   max-height: 100%;
   z-index: 10;
 
+  @include respond-to($laptop) {
+    width: 580px;
+  }
+
   &--open {
     transform: translateX(0);
+    border-right: 1px solid $border-color;
   }
 
   @media (max-width: 576px) {
@@ -113,28 +137,43 @@
     justify-content: center;
     margin: 5rem $gap $gap;
 
+    @include respond-to($laptop) {
+      margin: 7rem 4rem $gap;;
+    }
+
     &-item {
       margin: $gap 0;
       width: 100%;
+      cursor: pointer;
 
       &--active {
         a {
           color: $brown;
+          position: relative;
+          &:after {
+            @include navItemLine;
+          }
         }
       }
 
       &--link {
-        width: 100%;
         font-size: $font-size;
         color: $font-color;
         text-transform: uppercase;
         font-weight: $font-weight-extra-bold;
         letter-spacing: 0.5rem;
         text-decoration: none;
-        transition: color 0.3s linear;
+        transition: all 0.5s linear;
+        position: relative;
+        display: inline-block;
 
         &:hover {
-          color: $grey;
+          color: $black;
+          transform: translateX(5px);
+
+          &:after {
+            @include navItemLine;
+          }
         }
 
         &--expanded {
@@ -179,6 +218,27 @@
           &--active {
             color: $brown;
             font-weight: $font-weight-extra-bold;
+
+            a {
+              position: relative;
+              &:after {
+                @include navItemLine;
+              }
+            }
+          }
+
+          &--link {
+            position: relative;
+            transition: all 0.5s linear;
+            display: inline-block;
+            &:hover {
+              color: $black;
+              transform: translateX(5px);
+
+              &:after {
+                @include navItemLine;
+              }
+            }
           }
         }
       }

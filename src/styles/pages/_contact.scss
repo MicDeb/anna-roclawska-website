@@ -12,6 +12,9 @@
 
       .contact-photo {
         display: block;
+        img {
+          max-height: 80vh;
+        }
       }
     }
   }

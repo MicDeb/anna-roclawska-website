@@ -12,11 +12,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font: inherit;
   font-size: 100%;
-  letter-spacing: 2px;
-  font-weight: 300;
-  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
   vertical-align: baseline;
   line-height: 1.4;
+  color: $font-color;
+  letter-spacing: 2px;
 
   @include box-sizing(border-box);
 }
@@ -28,8 +29,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  color: $font-color;
-  background: $black;
+  background: $light-grey;
 }
 
 ol, ul {
@@ -73,6 +73,7 @@ button {
   padding: 0;
   border: none;
   color: $font-color;
+  cursor: pointer;
 
   &:focus,
   &:active {
@@ -120,20 +121,12 @@ button {
 }
 
 .content {
-  z-index: 10;
+  //z-index: 10;
 }
 
 .box {
   margin: $gap 0;
   line-height: 1.4;
-}
-
-.mb-1 {
-  margin-bottom: 1rem!important;
-}
-
-.m-3 {
-  margin: 3rem!important;
 }
 
 .flex-center {
@@ -143,4 +136,15 @@ button {
 
 .main-audio-player {
   display: none;
+}
+
+.react-images__view {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ytp-chrome-top-buttons {
+  display: none!important;
 }

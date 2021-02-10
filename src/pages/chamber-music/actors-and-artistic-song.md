@@ -21,12 +21,12 @@ title: actors_and_artistic_song
         <div class="col-xs-12 col-md-6">
             <div class="box works-box">
                 <div class="youtube-movie">
-                    <iframe width="956" height="538" src="https://www.youtube.com/embed/wXthNUpkn7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/wXthNUpkn7w" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
         <div class="col-xs-12">
-            <div class="separator m-3"></div>
+            <div class="separator mt-3 mb-3"></div>
         </div>
     </div>
     <div class="row reverse center-xs">

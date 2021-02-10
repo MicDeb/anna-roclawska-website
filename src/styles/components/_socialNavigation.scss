@@ -12,6 +12,11 @@
     img {
       width: 1.4rem;
       height: 1.4rem;
+
+      @include respond-to($desktop) {
+        width: 1.7rem;
+        height: 2rem;
+      }
     }
   }
 }

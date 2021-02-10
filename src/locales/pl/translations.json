@@ -78,5 +78,7 @@
   "details": "szczegóły",
   "star_with_music": "Czy chcesz włączyć muzykę?",
   "yes": "Tak",
-  "no": "Nie"
+  "no": "Nie",
+  "phone": "tel.",
+  "mail": "mail"
 }

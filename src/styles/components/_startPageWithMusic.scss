@@ -10,18 +10,26 @@
   }
 
   &-buttons {
+    margin-top: $gap;
     display: flex;
     justify-content: center;
     align-items: center;
 
     button {
       width: 40px;
-      border: 1px solid $light-brown;
+      border: 1px solid $border-color;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 4px;
       margin: 0 1rem;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background-color: $font-color;
+        color: $black;
+        font-weight: $font-weight-bold;
+      }
     }
   }
 }

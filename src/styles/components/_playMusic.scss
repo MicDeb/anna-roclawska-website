@@ -2,4 +2,9 @@
   width: 1.4rem;
   height: auto;
   margin: 6px 6px 6px $gap;
+
+  @include respond-to($desktop) {
+    width: 1.7rem;
+    height: 2rem;
+  }
 }

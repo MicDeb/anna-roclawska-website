@@ -1,26 +1,17 @@
 .footer {
-  background: $black;
-  line-height: 20px;
-  border-top: 1px solid $font-color;
-  padding: $gap-sm 0;
+  border-top: 1px solid $border-color;
+  color: $grey;
+  font-size: $font-size-sm;
 
-  &__navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: $gap-lg;
-
-    &--item {
-      padding: $gap-sm 0;
-      text-transform: uppercase;
-      font-weight: $font-weight-bold;
-      width: 100%;
-      border-bottom: 2px solid #D9D6CC;
-      font-size: 1rem;
-      letter-spacing: 0.5rem;
-      text-decoration: none;
-      transition: color 0.3s linear;
+  .wrapper {
+    padding: $gap * 2 0;
+    .row {
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-width: $font-weight-regular;
+      }
     }
   }
 
@@ -28,9 +19,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: $gap;
 
     a {
-      margin: $gap-sm;
+      margin: 0 $gap-sm;
     }
   }
 }

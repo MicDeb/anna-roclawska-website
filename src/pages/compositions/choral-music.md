@@ -24,7 +24,7 @@ title: choral_music
             </div>
         </div>
         <div class="col-xs-12">
-            <div class="separator m-3"></div>
+            <div class="separator mt-3 mb-3"></div>
         </div>
     </div>
     <div class="row reverse center-xs">
@@ -47,7 +47,7 @@ title: choral_music
             </div>
         </div>
         <div class="col-xs-12">
-            <div class="separator m-3"></div>
+            <div class="separator mt-3 mb-3"></div>
         </div>
     </div>
     <div class="row center-xs">
@@ -70,7 +70,7 @@ title: choral_music
             </div>
         </div>
         <div class="col-xs-12">
-            <div class="separator m-3"></div>
+            <div class="separator mt-3 mb-3"></div>
         </div>
     </div>
     <div class="row reverse center-xs">
