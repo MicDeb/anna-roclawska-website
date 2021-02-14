@@ -16,6 +16,18 @@ export default function Navbar({ location, toggleMusic, isMusicPlay }) {
     setIsOpen(false);
   }, []);
 
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      const body = document.getElementsByTagName('body');
+      const bodyElem = Array.from(body)[0];
+      if (isOpen) {
+        bodyElem.classList.add('menu-open');
+      } else {
+        bodyElem.classList.remove('menu-open');
+      }
+    }
+  }, [isOpen]);
+
   const handleLanguageChange = (event) => {
     i18n.changeLanguage(event.target.value);
     setLanguage(event.target.value);

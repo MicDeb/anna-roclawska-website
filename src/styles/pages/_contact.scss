@@ -1,10 +1,22 @@
 .contact {
   &__container {
     @include page-container;
-    background-image: url('../img/main/anna-roclawska-musialczyk005.jpg');
 
-    .contact-photo {
-      display: none;
+    &--row {
+      flex-direction: column-reverse;
+
+      .contact-photo {
+        img {
+          max-height: 80vh;
+          width: 56vw;
+        }
+      }
+      .contact-details {
+        margin-bottom: $gap-lg;
+        .contact__email {
+          font-size: $font-size-lg;
+        }
+      }
     }
 
     @include respond-to($desktop) {
@@ -16,10 +28,10 @@
           max-height: 80vh;
         }
       }
-    }
-  }
 
-  &__email {
-    font-size: $font-size-xxl;
+      .contact__email {
+        font-size: $font-size-xxl;
+      }
+    }
   }
 }

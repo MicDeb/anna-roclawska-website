@@ -30,6 +30,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   background: $light-grey;
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 ol, ul {
@@ -98,6 +101,7 @@ button {
   iframe {
     max-width: 100%;
     height: auto;
+    min-height: 300px;
     @include respond-to($desktop) {
       width: 853px;
       height: 505px;
@@ -113,6 +117,7 @@ button {
   iframe {
     max-width: 100%;
     height: auto;
+    min-height: 300px;
     @include respond-to($desktop) {
       width: 853px;
       height: 480px;
@@ -147,4 +152,22 @@ button {
 
 .ytp-chrome-top-buttons {
   display: none!important;
+}
+
+@media screen and (min-aspect-ratio: 13/9) and (max-width: 1023px) {
+  body {
+    > * {
+      display: none!important;
+    }
+    position: relative;
+    &:before {
+      content: 'Obróć ekran';
+      font-size: 3rem;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000000;
+    }
+  }
 }
