@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import Slider from 'react-slick';
 import Recommendations from 'src/components/Recommendations';
 import ScrollBottom from 'src/components/ScrollBottom';
+import EmbeddedFacebookPost from 'src/components/EmbeddedFacebookPost';
 import { homePagePhotos } from 'src/helpers/homePagePhotos';
 
 const Index = () => {
@@ -48,7 +49,10 @@ const Index = () => {
         <div className='home-page-container__photo-slider'>
           <div className='aspectratio-container aspect-2-3 fit-height'>
             <div className='aspectratio-content'>
-              <Slider {...settings}>
+              <Slider
+                key='images-slider'
+                {...settings}
+              >
                 {homePagePhotos.map((photo, index) => (
                   <div key={photo.index}>
                     <img
@@ -65,6 +69,7 @@ const Index = () => {
         <ScrollBottom />
       </div>
       <Recommendations />
+      <EmbeddedFacebookPost />
     </section>
   );
 };

@@ -2,7 +2,7 @@
   &-page {
     &-container {
       @include page-container;
-      background-image: url('../img/main/anna-roclawska-musialczyk011.jpg');
+      //background-image: url('../img/main/anna-roclawska-musialczyk011.jpg');
       position: relative;
 
       @include respond-to($desktop) {
@@ -16,6 +16,12 @@
         top: 50%;
         transform: translate(0px, -50%);
 
+        @media (max-width: 576px) {
+          right: 10%;
+          top: 43vh;
+          transform: translate(0, 0);
+        }
+
         .aspectratio-container {
           display: inline-block;
           position: relative;
@@ -23,6 +29,10 @@
           &.fit-height{
             height: 100%;
             width: 25vw;
+
+            @media (max-width: 576px) {
+              width: calc(60vw - 1rem);
+            }
           }
 
           &.aspect-2-3::after{
@@ -40,14 +50,35 @@
           }
         }
 
+        &--single-img {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 100%;
+        }
+
         .profession {
           font-family: 'Cinzel', serif;
           font-size: $font-size-xxl;
-          font-weight: $font-weight-bold;
+          font-weight: $font-weight-regular;
+          @media (max-width: 576px) {
+            font-size: 1.6rem;
+            //display: none;
+          }
+
         }
       }
 
       &__text {
+        @media (max-width: 576px) {
+          width: 100vw;
+          height: auto;
+          top: 28%;
+          left: 0;
+          padding: 60px;
+          z-index: 1;
+        }
+
         width: 50vw;
         height: 80vh;
         position: absolute;
@@ -62,43 +93,70 @@
         p {
           line-height: 1;
           font-family: 'Cinzel', serif;
-          font-weight: 600;
-          color: $black;
-          font-size: 7vw;
+          font-weight: $font-weight-regular;
+          color: $font-color;
+          font-size: 5vw;
           letter-spacing: .7rem;
           width: 100%;
           display: flex;
           width: 100%;
           justify-content: center;
           align-items: center;
+
+          @media (max-width: 576px) {
+            letter-spacing: initial;
+            font-size: 9vw;
+            justify-content: flex-start;
+            align-items: baseline;
+          }
+
           * {
             font-family: 'Cinzel', serif;
-            font-size: 7vw;
+            font-size: 5vw;
             letter-spacing: .7rem;
-            //color: $light-grey;
-            //text-shadow: 0px 1px 2px rgba(0,0,0, 1);
+
+            @media (max-width: 576px) {
+              letter-spacing: initial;
+            }
           }
 
           span:first-child {
-            font-size: 11vw;
+            font-size: 9vw;
             font-style: italic;
             line-height: 0.7;
+            @media (max-width: 576px) {
+              font-size: 15vw;
+            }
           }
         }
 
         .name {
           letter-spacing: 1rem;
           animation: nameAnimate 1s linear 1;
+
+          @media (max-width: 576px) {
+            letter-spacing: initial;
+            //margin-right: 5rem;
+          }
         }
 
         .surname {
           margin-left: -20%;
           letter-spacing: 1.3rem;
           animation: surnameAnimate 1s linear 1;
+
+          @media (max-width: 576px) {
+            margin-left: 0;
+            letter-spacing: initial;
+            justify-content: flex-end;
+          }
         }
 
         .surname-second {
           animation: secondSurnameAnimate 1s linear 1;
+          @media (max-width: 576px) {
+            //justify-content: flex-end;
+          }
         }
       }
     }

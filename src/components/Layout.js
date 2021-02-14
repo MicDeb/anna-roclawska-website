@@ -127,6 +127,12 @@ const TemplateWrapper = ({
           property='og:image'
           content={`${ withPrefix('/') }img/og-image.png`}
         />
+        <script
+          async
+          defer
+          crossOrigin='anonymous'
+          src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2186738638294469&autoLogAppEvents=1'
+        />
       </Helmet>
       <audio
         controls

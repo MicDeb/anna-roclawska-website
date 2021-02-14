@@ -6,8 +6,8 @@ export default function Logo({ className }) {
   return (
     <Link to='/'>
       <div className={`logo ${ className }`}>
-        <p>R</p>
         <p>M</p>
+        <p>R</p>
         <span />
       </div>
     </Link>

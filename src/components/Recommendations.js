@@ -37,8 +37,9 @@ export default function Recommendations() {
             {' '}
             <br />
             <span className='author-professions'>
-              dyrygent, chórmistrz, pedagog,
-              Dyrektor Chóru NFM we Wrocławiu i projektu Akademii Chóralnej
+              dyrygent, chórmistrz, pedagog
+              <br />
+              Dyrektor artystyczny NFM i Dyrektor programowy projektu Akademii Chóralnej
             </span>
           </p>
         </div>

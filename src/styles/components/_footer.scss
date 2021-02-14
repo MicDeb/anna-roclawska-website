@@ -4,6 +4,7 @@
   font-size: $font-size-sm;
 
   .wrapper {
+    overflow-x: hidden;
     padding: $gap * 2 0;
     .row {
       div {
