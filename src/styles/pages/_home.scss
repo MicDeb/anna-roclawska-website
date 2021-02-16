@@ -2,11 +2,9 @@
   &-page {
     &-container {
       @include page-container;
-      //background-image: url('../img/main/anna-roclawska-musialczyk011.jpg');
       position: relative;
 
       @include respond-to($desktop) {
-        //background-image: url('../img/main/anna-roclawska-musialczyk002.jpg');
         @include page-container-desktop;
       }
 
@@ -28,7 +26,7 @@
 
           &.fit-height{
             height: 100%;
-            width: 25vw;
+            width: 22vw;
 
             @media (max-width: 576px) {
               width: calc(60vw - 1rem);
@@ -92,20 +90,18 @@
 
         p {
           line-height: 1;
-          font-family: 'Cinzel', serif;
+          font-family: 'Montserrat', serif;
           font-weight: $font-weight-regular;
           color: $font-color;
-          font-size: 5vw;
-          letter-spacing: .7rem;
+          font-size: 6vw;
           width: 100%;
           display: flex;
-          width: 100%;
           justify-content: center;
           align-items: center;
 
           @media (max-width: 576px) {
-            letter-spacing: initial;
-            font-size: 9vw;
+            line-height: 1.3;
+            font-size: 11vw;
             justify-content: flex-start;
             align-items: baseline;
           }
@@ -113,7 +109,6 @@
           * {
             font-family: 'Cinzel', serif;
             font-size: 5vw;
-            letter-spacing: .7rem;
 
             @media (max-width: 576px) {
               letter-spacing: initial;
@@ -121,7 +116,7 @@
           }
 
           span:first-child {
-            font-size: 9vw;
+            font-size: 7vw;
             font-style: italic;
             line-height: 0.7;
             @media (max-width: 576px) {
@@ -131,7 +126,6 @@
         }
 
         .name {
-          letter-spacing: 1rem;
           animation: nameAnimate 1s linear 1;
 
           @media (max-width: 576px) {
@@ -142,10 +136,13 @@
 
         .surname {
           margin-left: -20%;
-          letter-spacing: 1.3rem;
+          font-family: 'Cinzel', serif;
+          font-style: italic;
+          font-size: 5vw;
           animation: surnameAnimate 1s linear 1;
 
           @media (max-width: 576px) {
+            font-size: 9vw;
             margin-left: 0;
             letter-spacing: initial;
             justify-content: flex-end;
@@ -157,6 +154,23 @@
           @media (max-width: 576px) {
             //justify-content: flex-end;
           }
+        }
+      }
+    }
+
+    &__news {
+      &--title {
+        font-size: $font-size-xxl;
+        margin: 0 0 $gap * 2 0;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: $font-weight-regular;
+
+        @include respond-to($desktop) {
+          width: 600px;
+          margin: auto;
+          font-size: $font-size * 2.3;
         }
       }
     }

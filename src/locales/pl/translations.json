@@ -19,7 +19,8 @@
     "theater_music_and_song": "Muzyka teatralna i piosenka",
     "classical_music": "Muzyka klasyczna",
     "actors_and_artistic_song": "Piosenka aktorska i artystyczna",
-    "tapering": "Taperowanie (impowizacja na żywo do filmów)"
+    "tapering": "Taperowanie (impowizacja na żywo do filmów)",
+    "news": "Aktualności"
   },
   "home": "Strona główna",
   "bio": "Bio",
@@ -39,13 +40,7 @@
   "classical_music": "Muzyka klasyczna",
   "actors_and_artistic_song": "Piosenka aktorska i artystyczna",
   "tapering": "Taperowanie (impowizacja na żywo do filmów)",
-  "home": {
-    "subtitle": "Aktor | Wokalista | Trener wokalny"
-  },
-  "contact": {
-    "title": "Pozostańmy w kontakcie",
-    "subtitle": "Chcesz o czymś porozmawiać? Wyślij mi swoją wiadomość"
-  },
+  "news": "Aktualności",
   "calendar": {
     "no_events": "Brak wydarzeń w danym miesiącu"
   },
@@ -80,5 +75,6 @@
   "yes": "Tak",
   "no": "Nie",
   "phone": "tel.",
-  "mail": "mail"
+  "mail": "mail",
+  "read_more": "Więcej"
 }

@@ -46,7 +46,7 @@ export default function Gallery() {
         <Separator margin={3} />
         <div className='wrapper container'>
           <div className='row'>
-            {photosCatalog.map((catalog) => (
+            {photosCatalog.map((catalog, index) => (
               <div
                 key={catalog.title}
                 className='col-xs-12 col-lg-12'
@@ -54,6 +54,7 @@ export default function Gallery() {
                 <SingleShowPhotos
                   images={catalog.images}
                   title={catalog.title}
+                  withSeparator={photosCatalog.length < index + 1}
                 />
               </div>
             ))}

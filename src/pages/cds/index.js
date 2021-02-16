@@ -17,7 +17,7 @@ export default function Cds() {
         <Separator margin={3} />
         <div className='wrapper container'>
           <div className='row'>
-            {cdsList.map((cd, index) => (
+            {cdsList.map((cd) => (
               <Fragment key={cd.title}>
                 <div className='col-xs-12 col-md-6 col-lg-4'>
                   <div
@@ -38,9 +38,6 @@ export default function Cds() {
                       </div>
                     </Link>
                   </div>
-                  {index < (cdsList.length - 1) && (
-                    <Separator margin={3} />
-                  )}
                 </div>
               </Fragment>
             ))}

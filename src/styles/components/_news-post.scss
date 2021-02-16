@@ -1,0 +1,37 @@
+.news-list-item {
+  margin-bottom: $gap-lg;
+  .post-meta {
+    p {
+      margin: $gap * .5 0;
+
+      a.title {
+        text-decoration: underline;
+        font-weight: $font-weight-bold;
+      }
+
+      &.subtitle {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+
+  .excerpt {
+    text-align: left;
+    margin: $gap * .5 0;
+  }
+
+  .show-more-button {
+    text-decoration: underline;
+    font-weight: $font-weight-bold;
+  }
+}
+
+
+.news-post-template {
+  p {
+    margin: $gap 0;
+  }
+  .post-description {
+    font-size: $font-size-xl;
+  }
+}

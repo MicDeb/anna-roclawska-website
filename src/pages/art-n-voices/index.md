@@ -48,7 +48,7 @@ title: art_n_voices
         <div class="col-xs-12 col-md-6">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="flex flex-between">
+                    <div class="flex flex-between art-n-voices__members">
                         <div class="box bio__box">
                             <ul class="works__performers">
                                 <li>soprany:</li>

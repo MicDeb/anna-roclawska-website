@@ -19,7 +19,8 @@
     "theater_music_and_song": "Theater music and song",
     "classical_music": "Classical music",
     "actors_and_artistic_song": "Actor's and artistic song",
-    "tapering": "Tapering"
+    "tapering": "Tapering",
+    "news": "News"
   },
   "home": "Home",
   "bio": "Bio",
@@ -39,13 +40,7 @@
   "classical_music": "Classical music",
   "actors_and_artistic_song": "Actor's and artistic song",
   "tapering": "Tapering",
-  "home": {
-    "subtitle": "Actor | Vocalist | Vocal coach"
-  },
-  "contact": {
-    "title": "Get in touch",
-    "subtitle": "Would you want to talk about something? Just send me your message and I will happily chat"
-  },
+  "news": "News",
   "calendar": {
     "no_events": "There are no events for the month"
   },
@@ -80,5 +75,6 @@
   "yes": "Yes",
   "no": "No",
   "phone": "phone",
-  "mail": "mail"
+  "mail": "mail",
+  "read_more": "Read more"
 }

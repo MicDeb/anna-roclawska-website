@@ -4,7 +4,8 @@ import { Helmet } from 'react-helmet';
 import Slider from 'react-slick';
 import Recommendations from 'src/components/Recommendations';
 import ScrollBottom from 'src/components/ScrollBottom';
-import EmbeddedFacebookPost from 'src/components/EmbeddedFacebookPost';
+import BlogRoll from 'src/components/BlogRoll';
+import Separator from 'src/components/Separator';
 import { homePagePhotos } from 'src/helpers/homePagePhotos';
 
 const Index = () => {
@@ -69,7 +70,17 @@ const Index = () => {
         <ScrollBottom />
       </div>
       <Recommendations />
-      <EmbeddedFacebookPost />
+      <div className='m-1'>
+        <div className='wrapper container home-page__news'>
+          <div className='row center-xs'>
+            <div className='col-xs-12'>
+              <h2 className='home-page__news--title'>{t('news')}</h2>
+              <Separator margin={3} />
+            </div>
+            <BlogRoll />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

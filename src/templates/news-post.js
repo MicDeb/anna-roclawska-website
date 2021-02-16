@@ -1,78 +1,73 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { kebabCase } from 'lodash';
 import { Helmet } from 'react-helmet';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
+import { Spring } from 'react-spring/renderprops';
+import { useTranslation } from 'react-i18next';
 import Content, { HTMLContent } from 'components/Content';
+import Separator from 'components/Separator';
 
-export const BlogPostTemplate = ({
+export const NewsPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
   title,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
+  const { t } = useTranslation();
 
   return (
-    <section className='section'>
+    <section className='news-post-template'>
       {helmet || ''}
-      <div className='container content'>
-        <div className='columns'>
-          <div className='column is-10 is-offset-1'>
-            <h1 className='title is-size-2 has-text-weight-bold is-bold-light'>
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: '4rem' }}>
-                <h4>Tags</h4>
-                <ul className='taglist'>
-                  {tags.map((tag) => (
-                    <li key={`${ tag }tag`}>
-                      <Link to={`/tags/${ kebabCase(tag) }/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
-        </div>
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+      >
+        {(props) => (
+          <h2
+            style={props}
+            className='page__main-title'
+          >
+            {t(title)}
+          </h2>
+        )}
+      </Spring>
+      <Separator margin={3} />
+      <div className='wrapper container'>
+        <p className='post-description'>{description}</p>
+        <PostContent content={content} />
       </div>
     </section>
   );
 };
 
-BlogPostTemplate.defaultProps = {
+NewsPostTemplate.defaultProps = {
   contentComponent: () => null,
   description: '',
   title: '',
   helmet: null,
-  tags: [],
 };
 
-BlogPostTemplate.propTypes = {
+NewsPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  helmet: PropTypes.object,
-  tags: PropTypes.array,
   title: PropTypes.string,
+  helmet: PropTypes.object,
 };
 
-const BlogPost = ({ data }) => {
+const NewsPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <BlogPostTemplate
+    <NewsPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
       helmet={(
         <Helmet titleTemplate='%s | Blog'>
-          <title>{`${ post.frontmatter.title }`}</title>
+          <title>{`Anna Rocławska - Musiałczyk | ${ post.frontmatter.title }`}</title>
           <meta
             name='description'
             content={`${ post.frontmatter.description }`}
@@ -85,17 +80,13 @@ const BlogPost = ({ data }) => {
   );
 };
 
-BlogPost.defaultProps = {
-  data: null,
-};
-
-BlogPost.propTypes = {
+NewsPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
-  }),
+  }).isRequired,
 };
 
-export default BlogPost;
+export default NewsPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {

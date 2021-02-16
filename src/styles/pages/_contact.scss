@@ -7,30 +7,31 @@
 
       .contact-photo {
         img {
-          max-height: 80vh;
+          max-height: 70vh;
           width: 56vw;
+          object-fit: contain;
         }
       }
       .contact-details {
         margin-bottom: $gap-lg;
         .contact__email {
-          font-size: $font-size-lg;
+          font-size: 6vw;
         }
-      }
-    }
-
-    @include respond-to($desktop) {
-      background-image: none;
-
-      .contact-photo {
-        display: block;
-        img {
-          max-height: 80vh;
+        .contact__phone {
+          font-size: 4vw;
         }
       }
 
-      .contact__email {
-        font-size: $font-size-xxl;
+      @include respond-to($desktop) {
+        flex-direction: row;
+        .contact-details {
+          .contact__email {
+            font-size: 3vw;
+          }
+          .contact__phone {
+            font-size: 2vw;
+          }
+        }
       }
     }
   }

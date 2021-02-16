@@ -19,7 +19,7 @@ CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
 CMS.registerPreviewTemplate('bio', BioPagePreview);
-CMS.registerPreviewTemplate('blog', BlogPostPreview);
+CMS.registerPreviewTemplate('news', BlogPostPreview);
 CMS.registerPreviewTemplate('contact', ContactPagePreview);
 CMS.registerPreviewTemplate('symphonic-and-orchestor-music', SymphonicAndOrchestorMusicPreview);
 CMS.registerPreviewTemplate('chamber-music', ChamberMusicPreview);

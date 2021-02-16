@@ -4,15 +4,14 @@
     &:hover {
       cursor: pointer;
       transform: translateX(5px)
-      //box-shadow: 0 6px 27px -13px $border-color;
-      //box-shadow:
-      //        0 2px 2px rgba(250, 250, 250, 0.034),
-      //        0 3px 37px rgba(250, 250, 250, 0.048),
-      //        0 4px 38px rgba(250, 250, 250, 0.06),
-      //        0 5px 39px rgba(250, 250, 250, 0.072),
-      //        0 6px 100px rgba(250, 250, 250, 0.086),
-      //        0 7px 46px rgba(250, 250, 250, 0.12)
     }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
     @include respond-to($desktop) {
       height: 400px;
       display: flex;
@@ -21,9 +20,6 @@
 
       img {
         height: 320px;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
       }
     }
 
@@ -40,16 +36,16 @@
         border-bottom: 1px solid $border-color;
         display: flex;
         align-items: center;
+        font-size: $font-size-sm;
       }
 
       .icon-details {
         margin-left: 2px;
-        @extend %fa-icon;
-        @extend .fas;
-
-        &:before {
-          content: fa-content($fa-var-chevron-right);
-        }
+        width: 7px;
+        height: 7px;
+        transform: rotate(-45deg);
+        border-right: 2px solid $font-color;
+        border-bottom: 2px solid $font-color;
       }
     }
 

@@ -2,7 +2,7 @@
   margin: $main-gap $gap $gap * 3;
 
   @include respond-to($desktop) {
-    margin: 11rem 0 $gap * 3;
+    margin: 9rem 0 $gap * 3;
   }
 
   .page {

@@ -7,7 +7,7 @@ title: CONTACT
     <div class="row middle-xs center-xs contact__container--row">
         <div class="col-xs-12 col-md-6 contact-photo">
 
-![Anna Rocławska-Musiałczyk](/img/anna-roclawska-musialczyk005.jpg "Anna Rocławska-Musiałczyk")
+![Anna Rocławska-Musiałczyk](/img/anna-roclawska-musialczyk011.jpg "Anna Rocławska-Musiałczyk")
         </div>
         <div class="col-xs-12 col-md-6 contact-details">
             <p class="contact__email">a-roclawska@wp.pl</p>

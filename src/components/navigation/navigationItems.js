@@ -61,6 +61,7 @@ export const navigationItems = Object.freeze([
   { location: '/art-n-voices', name: 'art_n_voices' },
   { location: '/cds', name: 'cds' },
   { location: '/gallery', name: 'gallery' },
+  { location: '/news', name: 'news' },
   { location: '/contact', name: 'contact' },
 ]);
 

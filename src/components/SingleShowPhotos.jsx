@@ -21,6 +21,7 @@ export function SingleShowPhotos(props) {
   const {
     images,
     title,
+    withSeparator,
   } = props;
 
   return (
@@ -30,7 +31,9 @@ export function SingleShowPhotos(props) {
         data={images}
         openLightbox={openLightbox}
       />
-      <Separator margin={3} />
+      {withSeparator && (
+        <Separator margin={3} />
+      )}
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -52,11 +55,11 @@ export function SingleShowPhotos(props) {
 
 SingleShowPhotos.defaultProps = {
   title: '',
+  withSeparator: true,
 };
 
 SingleShowPhotos.propTypes = {
-  // data: PropTypes.array.isRequired,
   images: PropTypes.array.isRequired,
-  // withFigcaption: PropTypes.bool,
   title: PropTypes.string,
+  withSeparator: PropTypes.bool,
 };

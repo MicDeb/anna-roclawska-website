@@ -24,18 +24,18 @@ export default function Menu({
 
   const toggleChildMenu = useCallback(() => {
     let childMenuState = initialChildMenuState;
-    if (includes(location.pathname, '/compositions/')) {
+    if (includes(location?.pathname, '/compositions/')) {
       childMenuState = { ...initialChildMenuState, compositions: true };
     }
-    if (includes(location.pathname, '/chamber-music/')) {
+    if (includes(location?.pathname, '/chamber-music/')) {
       childMenuState = { ...initialChildMenuState, chamber_music_activity: true };
     }
     setChildMenuOpen(childMenuState);
-  }, [location.pathname]);
+  }, [location]);
 
   useEffect(() => {
     toggleChildMenu();
-  }, [location.pathname, toggleChildMenu]);
+  }, [location, toggleChildMenu]);
 
   return (
     <div className={`navbar__menu ${ isOpen ? 'navbar__menu--open' : '' }`}>
@@ -43,7 +43,7 @@ export default function Menu({
         {map(navigationItems, (item) => (
           <li
             key={item.name}
-            className={`navbar__menu--links-item ${ location.pathname === item.location ? 'navbar__menu--links-item--active' : '' }`}
+            className={`navbar__menu--links-item ${ location?.pathname === item.location ? 'navbar__menu--links-item--active' : '' }`}
           >
             {item.location ? (
               <Link
@@ -79,7 +79,7 @@ export default function Menu({
                 {map(item.children, (navChildren) => (
                   <li
                     key={navChildren.name}
-                    className={`menu-item-children--item ${ location.pathname === navChildren.location ? 'menu-item-children--item--active' : '' }`}
+                    className={`menu-item-children--item ${ location?.pathname === navChildren.location ? 'menu-item-children--item--active' : '' }`}
                   >
                     <Link
                       className='menu-item-children--item--link'
